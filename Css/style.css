@@ -78,7 +78,7 @@
 
 .nav-link:hover,
 .nav-link.active {
-  background: #077dd1;
+  background: #0773c0;
   color: white;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .main {
-    width: 100%;
+  width: 100%;
 }
 
 .welcome {
@@ -160,5 +160,36 @@
 .sub-title {
   width: 700px;
   color: #b8c9df;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.category {
+  border: 1px solid #244c7d;
+  border-radius: 14px;
+  padding: 22px;
+  min-height: 150px;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: #1684ff;
+}
+.green {
+  background-color: #00c58e;
+}
+.purple {
+  background-color: #9a65ff;
+}
+.orange {
+  background-color: #ff9b32;
+}
+.cyan {
+  background-color: #16c5d8;
 }
