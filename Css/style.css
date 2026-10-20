@@ -14,30 +14,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 body {
-  font-family: "Inter", Arial, sans-serif;
   background: #000e22;
   color: var(--text);
-  font-size: 14px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
-button {
-  font: inherit;
-  cursor: pointer;
-}
-
-/* Main Layout */
 
 .app {
   min-height: 100vh;
@@ -47,8 +35,6 @@ button {
     radial-gradient(ellipse at 75% 18%, #063365 0, transparent 37%),
     linear-gradient(120deg, #00152e, #001027 80%);
 }
-
-/* Sidebar */
 
 .sidebar {
   min-height: 100vh;
@@ -99,18 +85,18 @@ button {
 .nav-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
+  font-size: 16px;
+  font-weight: 450;
   padding: 11px 12px;
   border: 1px solid transparent;
   border-radius: 8px;
   color: #c5d9f3;
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 
-.nav-item span {
-  width: 17px;
-  text-align: center;
+.nav-icon {
   font-size: 20px;
   color: #a8d2ff;
 }
@@ -126,7 +112,7 @@ button {
 .profile {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
   width: 100%;
   margin-top: auto;
   padding: 10px;
@@ -142,7 +128,7 @@ button {
   flex-shrink: 0;
   color: white;
   font-weight: 800;
-  background: linear-gradient(135deg, #bfe6ff, #0872d9);
+  background: linear-gradient(135deg, #abddfc, #0872d9);
   border-radius: 50%;
 }
 
@@ -167,6 +153,7 @@ button {
 
 .arrow {
   margin-left: auto;
+  margin-bottom: auto;
   color: #a9c9e7;
 }
 
@@ -177,46 +164,44 @@ button {
 }
 
 .topbar {
-  height: 61px;
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 14px;
   border-bottom: 1px solid #0b3157;
+  padding: 8px 14px;
   color: var(--muted);
 }
 
 .breadcrumb {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .breadcrumb span {
-  margin-right: 9px;
   color: #0bb8ff;
 }
 
 .top-actions {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 18px;
 }
 
 .top-actions button {
   border: none;
   background: transparent;
   color: #dcecff;
-  font-size: 19px;
+  font-size: 30px;
 }
 
 .user-avatar {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   font-size: 10px;
 }
 
 .username {
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .hero {
