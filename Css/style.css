@@ -80,7 +80,7 @@ button {
 
 .highlight {
   color: #00d0ff;
-} 
+}
 
 .brand-info small {
   display: block;
@@ -101,7 +101,7 @@ button {
   align-items: center;
   gap: 12px;
   padding: 11px 12px;
-  border: 1px solid transparent;  
+  border: 1px solid transparent;
   border-radius: 8px;
   color: #c5d9f3;
   cursor: pointer;
@@ -171,15 +171,10 @@ button {
 }
 
 .main-content {
-  min-width: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0 22px 13px;
-  overflow: hidden;
 }
-
-/* Topbar */
 
 .topbar {
   height: 61px;
@@ -224,14 +219,12 @@ button {
   font-size: 11px;
 }
 
-/* Welcome Section */
-
 .hero {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 137px;
-  padding: 11px 0 19px;
+  padding: 0 22px 13px;
   overflow: hidden;
 }
 
@@ -265,8 +258,6 @@ button {
   font-size: 12px;
   line-height: 1.7;
 }
-
-/* Mountain Decoration */
 
 .mountains {
   position: absolute;
@@ -311,10 +302,9 @@ button {
   border-bottom-color: #042f67;
 }
 
-/* Category Section */
-
 .categories {
   margin-top: 10px;
+  padding: 0 22px 13px;
 }
 
 .section-heading {
@@ -332,8 +322,6 @@ button {
   color: #8cb5dc;
   font-size: 11px;
 }
-
-/* Category Grid */
 
 .category-grid {
   display: grid;
@@ -392,8 +380,6 @@ button {
   --bottom: #005469;
 }
 
-/* Category Icons */
-
 .category-icon {
   width: 100%;
   height: 47px;
@@ -428,13 +414,12 @@ button {
   line-height: 1.6;
 }
 
-/* Quiz Action Cards */
-
 .quick-actions {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 15px;
   margin-top: 17px;
+  padding: 0 22px 13px;
 }
 
 .action-card {
@@ -486,15 +471,13 @@ button {
   font-size: 25px;
 }
 
-/* Footer */
-
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
   margin-top: auto;
-  padding: 24px 0 5px;
+  padding: 0 22px 13px;
   color: #d1e4f8;
   font-size: 11px;
 }
