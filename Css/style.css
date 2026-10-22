@@ -20,8 +20,8 @@
   --blue: #087cff;
   --text: #f4f8ff;
   --muted: #9bbde0;
-  --green: #00d49a;
-  --purple: #803bff;
+  --top: #1269e9;
+  --bottom: #003cb2;
 }
 
 * {
@@ -37,8 +37,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .app {
@@ -109,7 +109,7 @@ a {
 }
 
 .nav-icon {
-  font-size: 20px;
+  font-size: 22px;
   color: #a8d2ff;
 }
 
@@ -162,7 +162,8 @@ a {
   color: var(--muted);
 }
 
-.arrow {
+.arrow-down {
+  width: 26px;
   margin-left: auto;
   margin-bottom: auto;
   color: var(--muted);
@@ -203,16 +204,34 @@ a {
   background: transparent;
   color: #dcecff;
   font-size: 18px;
+  width: 26px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
 }
 
 .user-avatar {
   width: 28px;
   height: 28px;
   font-size: 10px;
+  margin-right: 6px;
 }
 
 .username {
   font-size: 15px;
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.fa-angle-down {
+  color: var(--text);
 }
 
 .welcome {
@@ -220,7 +239,7 @@ a {
 }
 
 .eyebrow {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   color: #55bfff;
   font-size: 9px;
   font-weight: 700;
@@ -377,7 +396,7 @@ a {
   border: 1px solid #07549a;
   border-radius: 10px;
   background: linear-gradient(120deg, #03264d, #001a36);
-  transition: all 0.2s linear; 
+  transition: all 0.2s linear;
 }
 
 .action-card:hover {
