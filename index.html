@@ -12,12 +12,19 @@
       <!-- Sidebar -->
       <aside class="sidebar">
         <a href="./index.html" class="brand">
-          <img class="brand-icon" src="./Assets/Images/App Logo.png" alt="App Logo" />
+          <!-- <img class="brand-icon" src="./Assets/Images/App Logo.png" alt="App Logo" /> -->
+              <i class="fa-solid fa-graduation-cap brand-icon"></i>
+
 
           <div class="brand-info">
             <h2>Skill<span class="highlight">Quest</span></h2>
 
-            <small>Learn • Practice • Grow</small>
+            <small
+              >Learn<i class="fa-solid fa-circle footer-dot"></i>Practice<i
+                class="fa-solid fa-circle footer-dot"
+              ></i
+              >Grow</small
+            >
           </div>
         </a>
 
@@ -72,7 +79,7 @@
             <div class="user-info">
               <div class="user-avatar">M</div>
               <span class="username">Muzzammil</span>
-              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-down arrow-down"></i>
             </div>
           </div>
         </header>
@@ -155,14 +162,14 @@
         <!-- Quick Actions -->
         <section class="quick-actions" id="mix-quiz">
           <a href="./Pages/mix-quiz.html" class="action-card">
-            <div class="action-icon">⤨</div>
+            <div class="action-icon"><i class="fa-solid fa-shuffle nav-icon"></i></div>
 
             <div class="action-content">
               <h3>Mix Quiz</h3>
               <p>Random questions from all topics</p>
             </div>
 
-            <span class="action-arrow">→</span>
+            <img class="action-arrow" src="./Assets/Icons/arrow-right-icon.svg" />
           </a>
 
           <a href="./Pages/topics.html" class="action-card">
@@ -173,18 +180,36 @@
               <p>Choose a topic and level</p>
             </div>
 
-            <span class="action-arrow">→</span>
+            <img class="action-arrow" src="./Assets/Icons/arrow-right-icon.svg" />
           </a>
         </section>
 
         <!-- Footer -->
         <footer class="footer">
-          <span class="footer-logo">🎓</span>
-          <span>Learn</span>
-          <b>•</b>
-          <span>Practice</span>
-          <b>•</b>
-          <span>Improve</span>
+          <div class="footer-brand">
+            <span class="footer-logo">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+            <div class="footer-text">
+              <strong>Skill<span>Quest</span></strong>
+              <small>Your journey to mastery starts here.</small>
+            </div>
+          </div>
+
+          <div class="footer-divider"></div>
+
+          <div class="footer-motto">
+            <span><i class="fa-solid fa-book-open"></i>Learn</span>
+            <i class="fa-solid fa-circle footer-dot"></i>
+            <span><i class="fa-solid fa-bolt"></i>Practice</span>
+            <i class="fa-solid fa-circle footer-dot"></i>
+            <span><i class="fa-solid fa-trophy"></i>Improve</span>
+          </div>
+
+          <p class="footer-copyright">
+            Made with <i class="fa-solid fa-heart"></i> for curious minds
+            <span>© 2026 SkillQuest</span>
+          </p>
         </footer>
       </main>
     </div>
