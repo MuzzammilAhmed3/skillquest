@@ -77,7 +77,6 @@ img {
 .brand-icon {
   width: 55px;
   height: 55px;
-  /* object-fit: contain; */
   flex-shrink: 0;
   color: var(--primary);
 }
@@ -645,3 +644,19 @@ img {
 .footer-copyright span {
   color: #6f7d9e;
 }
+
+/* For Topics Page */
+
+.topics-page .welcome {
+  padding: 24px;
+} 
+
+.topics-page .desc {
+  max-width: 710px;
+  margin-top: 9px;
+}
+
+.topics-page .category-card {
+  min-height: 265px;
+}
+
