@@ -8,26 +8,34 @@
     <script src="https://kit.fontawesome.com/7c92364311.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="app">
+    <div class="app-layout">
       <!-- Sidebar -->
       <aside class="sidebar">
-        <a href="./index.html" class="brand">
-          <img class="brand-icon" src="../Assets/Images/App Logo.png" alt="App Logo" />
+        <a href="../index.html" class="brand">
+          <!-- <img class="brand-icon" src="./Assets/Images/App Logo.png" alt="App Logo" /> -->
+          <i class="fa-solid fa-graduation-cap brand-icon"></i>
 
           <div class="brand-info">
             <h2>Skill<span class="highlight">Quest</span></h2>
 
-            <small>Learn • Practice • Grow</small>
+            <small
+              >Learn<i class="fa-solid fa-circle footer-dot"></i>Practice<i
+                class="fa-solid fa-circle footer-dot"
+              ></i
+              >Grow</small
+            >
           </div>
         </a>
 
+        <div class="divider"></div>
+
         <nav class="navigation">
-          <a href="../index.html" class="nav-link"
+          <a href="./index.html" class="nav-link"
             ><i class="fa-regular fa-house nav-icon"></i>Home</a
           >
 
           <a href="./Pages/topics.html" class="nav-link active"
-            ><i class="fa-solid fa-kaaba nav-icon"></i>Topics</a
+            ><i class="fa-solid fa-layer-group nav-icon"></i>Topics</a
           >
 
           <a href="./Pages/mix-quiz.html" class="nav-link"
@@ -57,82 +65,53 @@
       </aside>
 
       <!-- Main Content -->
-      <main class="main-content">
+      <main class="main-content topics-page">
         <!-- Topbar -->
         <header class="topbar">
-          <div class="topbar-left"><span>▦</span> Topics Page</div>
+          <div class="topbar-left"><span>▦</span> Dashboard</div>
 
           <div class="topbar-right">
             <button aria-label="Search">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
+
             <button aria-label="Notifications"><i class="fa-regular fa-bell"></i></button>
+
             <div class="user-info">
               <div class="user-avatar">M</div>
               <span class="username">Muzzammil</span>
-              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-down arrow-down"></i>
             </div>
           </div>
         </header>
 
-        <!-- Welcome Section -->
-        <section class="welcome">
-          <h1 class="title">Explore Topics</h1>
-          <p class="desc">Select a category to start your learning journey.</p>
-        </section>
-
-        <!-- Topics List -->
-      <section class="topic-list">
-          <a href="./subtopics.html" class="topic-card office">
-            <img src="../Assets/Images/15224575.webp" width="48" height="48" alt="MS Office" />
-            <div>
-              <h3>MS Office</h3>
-              <p class="muted">Word, Excel, PowerPoint, Access</p>
-              <small>4 Topics • 120+ Questions</small>
+        <!-- Footer -->
+        <!-- <footer class="footer">
+          <div class="footer-brand">
+            <span class="footer-logo">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+            <div class="footer-text">
+              <strong>Skill<span>Quest</span></strong>
+              <small>Your journey to mastery starts here.</small>
             </div>
-            <span class="arrow">→</span>
-          </a>
+          </div>
 
-          <a href="./subtopics.html" class="topic-card frontend">
-            <div>&lt;/&gt;</div>
-            <div>
-              <h3>Frontend</h3>
-              <p class="muted">HTML, CSS, JavaScript, React</p>
-              <small>5 Topics • 150+ Questions</small>
-            </div>
-            <span class="arrow">→</span>
-          </a>
+          <div class="footer-divider"></div>
 
-          <a href="./subtopics.html" class="topic-card backend">
-            <img src="https://img.icons8.com/fluency/96/server.png" width="48" height="48" alt="Backend" />
-            <div>
-              <h3>Backend</h3>
-              <p class="muted">Node.js, Express.js, Python</p>
-              <small>4 Topics • 100+ Questions</small>
-            </div>
-            <span class="arrow">→</span>
-          </a>
+          <div class="footer-motto">
+            <span><i class="fa-solid fa-book-open"></i>Learn</span>
+            <i class="fa-solid fa-circle footer-dot"></i>
+            <span><i class="fa-solid fa-bolt"></i>Practice</span>
+            <i class="fa-solid fa-circle footer-dot"></i>
+            <span><i class="fa-solid fa-trophy"></i>Improve</span>
+          </div>
 
-          <a href="./subtopics.html" class="topic-card database">
-            <img src="https://cdn.simpleicons.org/mysql/FFFFFF" width="48" height="48" alt="Database" />
-            <div>
-              <h3>Database</h3>
-              <p class="muted">MySQL, PostgreSQL, Firebase</p>
-              <small>3 Topics • 80+ Questions</small>
-            </div>
-            <span class="arrow">→</span>
-          </a>
-
-          <a href="./subtopics.html" class="topic-card others">
-            <img src="https://img.icons8.com/fluency/96/settings.png" width="48" height="48" alt="Other tools" />
-            <div>
-              <h3>Others</h3>
-              <p class="muted">Git, Docker, Linux, Tools</p>
-              <small>3 Topics • 60+ Questions</small>
-            </div>
-            <span class="arrow">→</span>
-          </a>
-        </section> 
+          <p class="footer-copyright">
+            Made with <i class="fa-solid fa-heart"></i> for curious minds
+            <span>© 2026 SkillQuest</span>
+          </p>
+        </footer> -->
       </main>
     </div>
   </body>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SkillQuest | Topics</title>
+
+    <link rel="stylesheet" href="../Css/style.css" />
+    <link rel="stylesheet" href="./sfsdv.css" />
+
+    <script src="https://kit.fontawesome.com/7c92364311.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <a href="../index.html" class="brand">
+          <i class="fa-solid fa-graduation-cap brand-icon"></i>
+
+          <div class="brand-info">
+            <h2>Skill<span class="highlight">Quest</span></h2>
+            <small>
+              Learn
+              <i class="fa-solid fa-circle footer-dot"></i>
+              Practice
+              <i class="fa-solid fa-circle footer-dot"></i>
+              Grow
+            </small>
+          </div>
+        </a>
+
+        <div class="divider"></div>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+          <a href="../index.html" class="nav-link">
+            <i class="fa-regular fa-house nav-icon"></i>
+            Home
+          </a>
+
+          <a href="./topics.html" class="nav-link active">
+            <i class="fa-solid fa-layer-group nav-icon"></i>
+            Topics
+          </a>
+
+          <a href="./mix-quiz.html" class="nav-link">
+            <i class="fa-solid fa-shuffle nav-icon"></i>
+            Mix Quiz
+          </a>
+
+          <a href="./results.html" class="nav-link">
+            <i class="fa-solid fa-chart-simple nav-icon"></i>
+            My Results
+          </a>
+
+          <a href="./settings.html" class="nav-link">
+            <i class="fa-solid fa-gear nav-icon"></i>
+            Settings
+          </a>
+        </nav>
+
+        <!-- Profile -->
+        <div class="profile">
+          <div class="avatar">M</div>
+
+          <div class="profile-info">
+            <strong>Muzzammil</strong>
+            <small>Beginner</small>
+          </div>
+
+          <i class="fa-solid fa-angle-down arrow-down"></i>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+          <div class="topbar-left">
+            <span>
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            Topics
+          </div>
+
+          <div class="topbar-right">
+            <button type="button" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button type="button" aria-label="Notifications">
+              <i class="fa-regular fa-bell"></i>
+            </button>
+
+            <div class="user-info">
+              <div class="user-avatar">M</div>
+              <span class="username">Muzzammil</span>
+              <i class="fa-solid fa-angle-down arrow-down"></i>
+            </div>
+          </div>
+        </header>
+
+        <!-- Page Introduction -->
+        <section class="welcome">
+          <p class="eyebrow">EXPLORE AND LEARN</p>
+
+          <h1 class="title">Discover Your <span>Topics</span></h1>
+
+          <p class="desc">
+            Choose a learning category, explore its subtopics, and test your knowledge with
+            interactive quizzes. Every question brings you one step closer to mastering a new skill.
+          </p>
+        </section>
+
+        <!-- Topics Heading -->
+        <section class="categories" id="topics">
+          <div class="section-heading">
+            <h2>All Categories</h2>
+            <p>Select a category to explore its topics</p>
+          </div>
+
+          <!-- Category Cards -->
+          <div class="category-grid">
+            <!-- MS Office -->
+            <a href="./subtopics.html?category=office" class="category-card office">
+              <div class="category-icon">
+                <img src="./Assets/Images/15224575.webp" alt="Microsoft Office logo" />
+              </div>
+
+              <h3>MS Office</h3>
+              <p>Word, Excel, PowerPoint and more</p>
+              <p>4 Learning Topics</p>
+
+              <span class="card-arrow">
+                Explore Topics
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+
+            <!-- Frontend -->
+            <a href="./subtopics.html?category=frontend" class="category-card frontend">
+              <div class="category-icon code-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <h3>Frontend</h3>
+              <p>Build beautiful websites and interfaces</p>
+              <p>5 Learning Topics</p>
+
+              <span class="card-arrow">
+                Explore Topics
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+
+            <!-- Backend -->
+            <a href="./subtopics.html?category=backend" class="category-card backend">
+              <div class="category-icon">
+                <i class="fa-solid fa-server"></i>
+              </div>
+
+              <h3>Backend</h3>
+              <p>Learn server-side programming</p>
+              <p>4 Learning Topics</p>
+
+              <span class="card-arrow">
+                Explore Topics
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+
+            <!-- Database -->
+            <a href="./subtopics.html?category=database" class="category-card database">
+              <div class="category-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+
+              <h3>Database</h3>
+              <p>Store, manage and organize data</p>
+              <p>3 Learning Topics</p>
+
+              <span class="card-arrow">
+                Explore Topics
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+
+            <!-- Others -->
+            <a href="./subtopics.html?category=others" class="category-card others">
+              <div class="category-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+
+              <h3>Others</h3>
+              <p>Explore useful developer tools</p>
+              <p>3 Learning Topics</p>
+
+              <span class="card-arrow">
+                Explore Topics
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Learning Tip -->
+        <section class="quick-actions">
+          <a class="action-card">
+            <div class="action-icon">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+
+            <div class="action-content">
+              <h3>Learn One Topic at a Time</h3>
+              <p>
+                Start with the basics, practice regularly, and improve your quiz scores step by
+                step.
+              </p>
+            </div>
+          </as>
+
+          <a href="./mix-quiz.html" class="action-card">
+            <div class="action-icon">
+              <i class="fa-solid fa-shuffle"></i>
+            </div>
+
+            <div class="action-content">
+              <h3>Ready for a Challenge?</h3>
+              <p>Mix questions from different topics in one quiz.</p>
+            </div>
+
+            <span class="action-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-brand">
+            <span class="footer-logo">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+
+            <div class="footer-text">
+              <strong>Skill<span>Quest</span></strong>
+              <small>Your journey to mastery starts here.</small>
+            </div>
+          </div>
+
+          <div class="footer-divider"></div>
+
+          <div class="footer-motto">
+            <span>
+              <i class="fa-solid fa-book-open"></i>
+              Learn
+            </span>
+
+            <i class="fa-solid fa-circle footer-dot"></i>
+
+            <span>
+              <i class="fa-solid fa-bolt"></i>
+              Practice
+            </span>
+
+            <i class="fa-solid fa-circle footer-dot"></i>
+
+            <span>
+              <i class="fa-solid fa-trophy"></i>
+              Improve
+            </span>
+          </div>
+
+          <p class="footer-copyright">
+            Made with <i class="fa-solid fa-heart"></i> for curious minds
+            <span>© 2026 SkillQuest</span>
+          </p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
