@@ -160,7 +160,7 @@ img {
   place-items: center;
   flex-shrink: 0;
   color: white;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 800;
   background: linear-gradient(135deg, #806bff, #30b8ef);
   border-radius: 12px;
@@ -244,10 +244,10 @@ img {
 }
 
 .user-avatar {
-  width: 32px;
-  height: 32px;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
-  font-size: 15px;
+  font-size: 19px;
 }
 
 .username {
@@ -399,7 +399,7 @@ img {
   font-weight: 750;
 }
 
-.category-card > p {
+.category-card p {
   margin-top: 5px;
   color: var(--muted);
   font-size: 13px;
@@ -648,8 +648,8 @@ img {
 /* For Topics Page */
 
 .topics-page .welcome {
-  padding: 24px;
-} 
+  padding: 26px;
+}
 
 .topics-page .desc {
   max-width: 710px;
@@ -658,5 +658,29 @@ img {
 
 .topics-page .category-card {
   min-height: 265px;
+}
+
+.topics-page .category-card p {
+  line-height: 1.6;
+}
+
+.card-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  color: var(--card-accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.arrow-right {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.category-card:hover .arrow-right {
+  transform: translateX(4px);
 }
 
