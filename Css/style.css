@@ -694,3 +694,463 @@ img {
 .tag-icon {
   color: var(--secondary);
 }
+
+/* For Mix Quiz Page */
+
+.mix-setup {
+  margin-top: 22px;
+}
+
+.mix-block {
+  margin-top: 34px;
+  background-color: var(--card);
+  padding: 23px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.mix-block-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.mix-block-heading h3 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.mix-block-heading h3 > span {
+  margin-right: 9px;
+  color: var(--secondary);
+  font-size: 13px;
+}
+
+.mix-page .mix-block-heading p {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.mix-page .mix-text-button {
+  padding: 7px 0 7px 8px;
+  color: var(--secondary);
+  background: transparent;
+  border: none;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.mix-page .mix-text-button:hover {
+  color: #fff;
+}
+
+.mix-page .mix-category-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.mix-page .mix-category {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  min-height: 155px;
+  padding: 15px;
+  background: #0c1426;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mix-page .mix-category:hover {
+  transform: translateY(-2px);
+  background: #121e35;
+}
+
+.mix-page .mix-category.office {
+  --mix-accent: #f18b4b;
+}
+
+.mix-page .mix-category.frontend {
+  --mix-accent: #39d9ff;
+}
+
+.mix-page .mix-category.backend {
+  --mix-accent: #43dda6;
+}
+
+.mix-page .mix-category.database {
+  --mix-accent: #9c85ff;
+}
+
+.mix-page .mix-category.others {
+  --mix-accent: #ffce67;
+}
+
+.mix-page .mix-category:has(input:checked) {
+  border-color: var(--mix-accent);
+  background: color-mix(in srgb, var(--mix-accent) 7%, #0c1426);
+}
+
+.mix-page .mix-category input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.mix-page .mix-category:focus-within {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+.mix-page .mix-check {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  width: 19px;
+  height: 19px;
+  display: grid;
+  place-items: center;
+  color: transparent;
+  font-size: 10px;
+  background: #1b2940;
+  border: 1px solid #35425c;
+  border-radius: 6px;
+}
+
+.mix-page .mix-category input:checked ~ .mix-check {
+  color: #08101f;
+  background: var(--mix-accent);
+  border-color: var(--mix-accent);
+}
+
+.mix-page .mix-category-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 13px;
+  color: var(--mix-accent);
+  font-size: 21px;
+  background: color-mix(in srgb, var(--mix-accent) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--mix-accent) 25%, transparent);
+  border-radius: 11px;
+}
+
+.mix-page .mix-category strong {
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.mix-page .mix-category small {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.mix-page .mix-selection-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.mix-page .mix-selection-info i {
+  color: var(--secondary);
+}
+
+.mix-page .mix-difficulty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.mix-page .mix-difficulty {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  padding: 15px;
+  background: #0c1426;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.mix-page .mix-difficulty input,
+.mix-page .mix-count-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.mix-page .mix-difficulty:focus-within,
+.mix-page .mix-count-option:focus-within {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+.mix-page .difficulty-radio {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border: 1px solid #53617d;
+  border-radius: 50%;
+}
+
+.mix-page .mix-difficulty.selected {
+  border-color: var(--difficulty-accent);
+  background: color-mix(in srgb, var(--difficulty-accent) 7%, #0c1426);
+}
+
+.mix-page .mix-difficulty.easy {
+  --difficulty-accent: #39dca4;
+}
+
+.mix-page .mix-difficulty.medium {
+  --difficulty-accent: #ffce67;
+}
+
+.mix-page .mix-difficulty.hard {
+  --difficulty-accent: #ff7d92;
+}
+
+.mix-page .mix-difficulty.selected .difficulty-radio {
+  border: 5px solid var(--difficulty-accent);
+}
+
+.mix-page .difficulty-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: var(--difficulty-accent);
+  background: color-mix(in srgb, var(--difficulty-accent) 10%, transparent);
+  border-radius: 10px;
+}
+
+.mix-page .difficulty-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.mix-page .difficulty-info strong {
+  font-size: 12px;
+}
+
+.mix-page .difficulty-info small {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.mix-page .difficulty-tag {
+  display: none;
+}
+
+.mix-page .mix-count-options {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.mix-page .mix-count-option {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+  padding: 18px 10px;
+  background: #0c1426;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.mix-page .mix-count-option.selected {
+  background: #7065ff12;
+  border-color: var(--primary);
+}
+
+.mix-page .count-number {
+  color: var(--text);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.mix-page .count-label {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.mix-page .mix-count-option.selected .count-number,
+.mix-page .mix-count-option.selected .count-label {
+  color: #aaa3ff;
+}
+
+.mix-page .mix-summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 25px;
+  padding: 18px;
+  background: linear-gradient(110deg, #171b38, #111b30);
+  border: 1px solid #343564;
+  border-radius: 14px;
+}
+
+.mix-page .mix-summary-icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #a79bff;
+  font-size: 20px;
+  background: #7065ff1c;
+  border-radius: 12px;
+}
+
+.mix-page .mix-summary-content {
+  min-width: 0;
+}
+
+.mix-page .mix-summary-content h3 {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.mix-page .mix-summary-content p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.mix-page .mix-summary-time {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: auto;
+  color: var(--secondary);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.mix-page .mix-error {
+  margin-top: 15px;
+  padding: 12px;
+  color: #ff9eac;
+  background: #ff7d9210;
+  border: 1px solid #ff7d9240;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.mix-page .mix-error[hidden] {
+  display: none;
+}
+
+.mix-page .mix-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.mix-page .mix-back-button,
+.mix-page .mix-start-button {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.mix-page .mix-back-button {
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.mix-page .mix-back-button:hover {
+  color: var(--text);
+  background: var(--card-hover);
+}
+
+.mix-page .mix-start-button {
+  color: white;
+  background: linear-gradient(100deg, #5547dc, #7164ff);
+  border: 1px solid #938aff;
+  box-shadow: 0 6px 20px #6254ff20;
+}
+
+.mix-page .mix-start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 25px #6254ff35;
+}
+
+.mix-page .mix-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 25px;
+  padding: 19px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.mix-page .mix-tip-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #ffce67;
+  font-size: 19px;
+  background: #ffce6714;
+  border-radius: 11px;
+}
+
+.mix-page .mix-tip h3 {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.mix-page .mix-tip p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
