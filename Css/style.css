@@ -672,3 +672,25 @@ img {
   transform: translateX(4px);
 }
 
+.mix-quiz-tags {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: var(--text);
+  background-color: #ffffff08;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.tag-icon {
+  color: var(--secondary);
+}

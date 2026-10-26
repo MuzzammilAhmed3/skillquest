@@ -8,37 +8,45 @@
     <script src="https://kit.fontawesome.com/7c92364311.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="app">
+    <div class="app-layout">
       <!-- Sidebar -->
-      <div class="sidebar">
-        <a href="#" class="brand">
-          <img class="brand-icon" src="../Assets/Images/App Logo.png" alt="App Logo" />
+      <aside class="sidebar">
+        <a href="./index.html" class="brand">
+          <!-- <img class="brand-icon" src="./Assets/Images/App Logo.png" alt="App Logo" /> -->
+          <i class="fa-solid fa-graduation-cap brand-icon"></i>
 
           <div class="brand-info">
             <h2>Skill<span class="highlight">Quest</span></h2>
 
-            <small>Learn • Practice • Grow</small>
+            <small
+              >Learn<i class="fa-solid fa-circle footer-dot"></i>Practice<i
+                class="fa-solid fa-circle footer-dot"
+              ></i
+              >Grow</small
+            >
           </div>
         </a>
 
+        <div class="divider"></div>
+
         <nav class="navigation">
-          <a href="../index.html" class="nav-link active"
+          <a href="./index.html" class="nav-link"
             ><i class="fa-regular fa-house nav-icon"></i>Home</a
           >
 
-          <a href="./topics.html" class="nav-link"
-            ><i class="fa-solid fa-kaaba nav-icon"></i>Topics</a
+          <a href="./Pages/topics.html" class="nav-link"
+            ><i class="fa-solid fa-layer-group nav-icon"></i>Topics</a
           >
 
-          <a href="./mix-quiz.html" class="nav-link"
+          <a href="./Pages/mix-quiz.html" class="nav-link active"
             ><i class="fa-solid fa-shuffle nav-icon"></i>Mix Quiz</a
           >
 
-          <a href="./results.html" class="nav-link"
+          <a href="./Pages/results.html" class="nav-link"
             ><i class="fa-solid fa-chart-simple nav-icon"></i>My Results</a
           >
 
-          <a href="./settings.html" class="nav-link"
+          <a href="./Pages/settings.html" class="nav-link"
             ><i class="fa-solid fa-gear nav-icon"></i>Settings</a
           >
         </nav>
@@ -54,7 +62,45 @@
 
           <i class="fa-solid fa-angle-down arrow-down"></i>
         </div>
-      </div>
+      </aside>
+
+      <main class="main-content mix-quiz-page">
+        <!-- Topbar -->
+        <header class="topbar">
+          <div class="topbar-left">
+            <span><i class="fa-solid fa-shuffle"></i></span> Mix Quiz
+          </div>
+
+          <div class="topbar-right">
+            <button aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button aria-label="Notifications"><i class="fa-regular fa-bell"></i></button>
+
+            <div class="user-info">
+              <div class="user-avatar">M</div>
+              <span class="username">Muzzammil</span>
+              <i class="fa-solid fa-angle-down arrow-down"></i>
+            </div>
+          </div>
+        </header>
+
+        <section class="welcome">
+          <p class="eyebrow">YOUR KNOWLEDGE CHALLENGE</p>
+          <h1 class="title">Mix It Up. <span>Level Up.</span></h1>
+          <p class="desc">
+            Challenge yourself with questions from different subjects. Choose your categories, set
+            your difficulty, and test what you know.
+          </p>
+
+          <div class="mix-quiz-tags">
+            <span class="tag"><i class="fa-solid fa-shuffle tag-icon"></i>Mixed Topics</span
+            ><span class="tag"><i class="fa-solid fa-bullseye tag-icon"></i>Your Difficulty</span
+            ><span class="tag"><i class="fa-solid fa-chart-line tag-icon"></i>Track Progress</span>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
