@@ -21,10 +21,10 @@
 
 .mix-page .mix-difficulty input,
 .mix-page .mix-count-option input {
-  /* position: absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
-  opacity: 0; */
+  opacity: 0;
 }
 
 .mix-page .mix-difficulty:focus-within,
