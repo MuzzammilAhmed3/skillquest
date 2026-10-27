@@ -732,7 +732,7 @@ img {
 .mix-setup {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
 }
 
 .mix-quiz-page .section-heading {
@@ -1008,3 +1008,71 @@ img {
   display: none;
 }
 
+.mix-count-options {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
+
+.mix-count-option {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-sm);
+  background-color: var(--surface-main);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.mix-count-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.count-number {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.count-label {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.selected {
+  background: #7065ff12;
+  border-color: var(--primary);
+}
+
+.selected .count-number,
+.selected .count-label {
+  color: #aaa3ff;
+}
+
+.mix-summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: var(--space-lg);
+  padding: 18px;
+  background: linear-gradient(110deg, #171b38, #111b30);
+  border: 1px solid #343564;
+  border-radius: 14px;
+}
+
+.mix-summary-icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #a79bff;
+  font-size: 20px;
+  background: #7065ff1c;
+  border-radius: 12px;
+}
