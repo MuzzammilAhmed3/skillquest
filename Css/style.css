@@ -331,7 +331,7 @@ img {
 }
 
 .categories {
-  margin-top: 36px;
+  margin-top: var(--space-lg);
 }
 
 .section-heading {
@@ -339,7 +339,8 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  margin-bottom: 15px;
+  margin-bottom: var(--space-xl);
+  padding: 0 var(--space-xs);
 }
 
 .section-heading h2 {
@@ -490,8 +491,8 @@ img {
 }
 
 .action-icon > .nav-icon {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
 }
 
 .action-content {
@@ -514,6 +515,11 @@ img {
   color: var(--secondary);
   width: 26px;
   height: 26px;
+  transition: all var(--transition-fast);
+}
+
+.action-card:hover .action-arrow {
+  transform: translateX(3px);
 }
 
 .footer {
@@ -720,13 +726,17 @@ img {
 }
 
 .mix-quiz-form {
-  margin-top: var(--space-md);
+  margin-top: var(--space-lg);
 }
 
 .mix-setup {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-xl);
+}
+
+.mix-quiz-page .section-heading {
+  margin-bottom: var(--space-sm);
 }
 
 .mix-block {
@@ -745,13 +755,12 @@ img {
 }
 
 .mix-block-heading h3 {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
-  line-height: 1.4;
 }
 
 .mix-block-heading h3 > span {
-  margin-right: var(--space-xs);
+  margin-right: var(--space-sm);
   color: var(--secondary);
   font-size: 13px;
 }
@@ -760,7 +769,7 @@ img {
   margin-top: var(--space-xs);
   color: var(--muted);
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .mix-text-button {
@@ -903,4 +912,49 @@ img {
 
 .mix-category:focus-within .mix-check {
   border-color: var(--secondary);
+}
+
+.mix-difficulty-grid {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.mix-difficulty {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 0;
+  padding: var(--space-md);
+  background-color: var(--surface-main);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.mix-difficulty:focus-within {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+.mix-difficulty input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.difficulty-radio {
+  width: 19px;
+  height: 19px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+.difficulty-icon {
+  
+}
+
+.difficulty-tag {
+  display: none;
 }
