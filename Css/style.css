@@ -1058,10 +1058,10 @@ img {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md);
   padding: 18px;
   background: linear-gradient(110deg, #171b38, #111b30);
-  border: 1px solid #343564;
+  border: 1px solid var(--border);
   border-radius: 14px;
 }
 
@@ -1075,4 +1075,132 @@ img {
   font-size: 20px;
   background: #7065ff1c;
   border-radius: 12px;
+}
+
+.mix-summary-content {
+  min-width: 0;
+}
+
+.mix-summary-content h3 {
+  font-size: 16px;
+  margin-bottom: var(--space-xs);
+}
+
+.mix-summary-text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.mix-summary-text .fa-circle {
+  width: 3px;
+  height: 3px;
+  display: grid;
+  place-items: center;
+}
+
+.mix-summary-time {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-left: auto;
+  color: var(--secondary);
+  font-size: 13px;
+}
+
+.mix-error {
+  margin-top: 15px;
+  padding: 12px;
+  color: #ff9eac;
+  background: #ff7d9210;
+  border: 1px solid #ff7d9240;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.mix-error[hidden] {
+  display: none;
+}
+
+.mix-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.mix-back-btn,
+.mix-start-btn {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 12px 18px;
+  border-radius: var(--space-sm);
+  font-size: 12px;
+  font-weight: 700;
+  transition: all var(--transition-normal);
+}
+
+.mix-back-btn {
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.mix-back-btn:hover {
+  color: var(--text);
+  background: var(--card-hover);
+}
+
+.mix-start-btn {
+  color: white;
+  background: linear-gradient(100deg, #5547dc, #7164ff);
+  border: 1px solid #938aff;
+  box-shadow: 0 6px 20px #6254ff20;
+}
+
+.mix-start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 25px #6254ff35;
+}
+
+.mix-tip {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-md);
+  padding: 19px;
+  border-radius: 14px;
+  margin-top: var(--space-lg);
+  background-color: var(--card);
+  border: 1px solid var(--border);
+}
+
+.mix-tip-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #ffce67;
+  font-size: 21px;
+  background: #ffce6714;
+  border-radius: var(--space-sm);
+}
+
+.mix-tip h3 {
+  font-size: 16px;
+  margin-bottom: var(--space-xs);
+}
+
+.mix-tip p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
 }
