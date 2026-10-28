@@ -3,38 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkillQuest | Results</title>
+    <title>SkillQuest | My Results</title>
     <link rel="stylesheet" href="../Css/style.css" />
     <script src="https://kit.fontawesome.com/7c92364311.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="app">
+    <div class="app-layout">
       <!-- Sidebar -->
-      <div class="sidebar">
-        <a href="#" class="brand">
-          <img class="brand-icon" src="../Assets/Images/App Logo.png" alt="App Logo" />
+      <aside class="sidebar">
+        <a href="../index.html" class="brand">
+          <i class="fa-solid fa-graduation-cap brand-icon"></i>
 
           <div class="brand-info">
             <h2>Skill<span class="highlight">Quest</span></h2>
 
-            <small>Learn • Practice • Grow</small>
+            <small
+              >Learn<i class="fa-solid fa-circle dot"></i>Practice<i
+                class="fa-solid fa-circle dot"
+              ></i
+              >Grow</small
+            >
           </div>
         </a>
 
+        <div class="nav-divider"></div>
+
         <nav class="navigation">
-          <a href="../index.html" class="nav-link active"
+          <a href="../index.html" class="nav-link"
             ><i class="fa-regular fa-house nav-icon"></i>Home</a
           >
 
           <a href="./topics.html" class="nav-link"
-            ><i class="fa-solid fa-kaaba nav-icon"></i>Topics</a
+            ><i class="fa-solid fa-layer-group nav-icon"></i>Topics</a
           >
 
           <a href="./mix-quiz.html" class="nav-link"
             ><i class="fa-solid fa-shuffle nav-icon"></i>Mix Quiz</a
           >
 
-          <a href="./results.html" class="nav-link"
+          <a href="./results.html" class="nav-link active"
             ><i class="fa-solid fa-chart-simple nav-icon"></i>My Results</a
           >
 
@@ -54,7 +61,64 @@
 
           <i class="fa-solid fa-angle-down arrow-down"></i>
         </div>
-      </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content results-page">
+        <!-- Topbar -->
+        <header class="topbar">
+          <div class="topbar-left">
+            <span><i class="fa-solid fa-chart-line nav-icon"></i></span> My Results
+          </div>
+
+          <div class="topbar-right">
+            <button aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button aria-label="Notifications"><i class="fa-regular fa-bell"></i></button>
+
+            <div class="user-info">
+              <div class="user-avatar">M</div>
+              <span class="username">Muzzammil</span>
+              <i class="fa-solid fa-angle-down arrow-down"></i>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <p class="eyebrow">YOUR LEARNING PROGRESS</p>
+
+            <h1 class="title">My <span>Results</span></h1>
+            <p class="desc">
+              Track your quiz performance, discover your strengths, and keep improving with every
+              attempt.
+            </p>
+          </div>
+
+          <div class="hero-icon">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+        </section>
+
+        <!-- Summary Statistics -->
+        <section class="results-stats">
+          <div class="stat-card">
+            <div class="stat-top">
+              <i class="fa-solid fa-clipboard-check stat-icon purple"></i>
+              <span class="stat-label">All Time</span>
+            </div>
+
+            <h2>24</h2>
+            <p>Quizzes Completed</p>
+            <span class="stat-note"
+              ><i class="fa-solid fa-circle-check"></i> Keep the momentum going</span
+            >
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
