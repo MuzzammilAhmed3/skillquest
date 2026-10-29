@@ -1373,7 +1373,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-sm);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 
 .panel-heading h2 {
@@ -1424,7 +1424,7 @@ img {
 
 .chart-grid-lines {
   position: absolute;
-  inset: 6px 0 7px;
+  inset: 6px 0 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1433,4 +1433,87 @@ img {
 .chart-grid-lines span {
   width: 100%;
   border-top: 1px dashed #2b3650;
+}
+
+.chart-bars {
+  position: relative;
+  z-index: 1;
+  top: 6px;
+  height: 221px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
+
+.chart-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.chart-bar {
+  position: relative;
+  width: 60%;
+  height: var(--bar-height);
+  min-height: 20px;
+  margin-top: auto;
+  border-radius: 7px 7px 1px 1px;
+  transition: all var(--transition-normal);
+}
+
+.chart-bar:hover {
+  filter: brightness(1.1);
+}
+
+.chart-bar > span {
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  color: #dce4fa;
+  font-size: 11px;
+  font-weight: 700;
+  transform: translateX(-50%);
+}
+
+.purple-bar {
+  background: linear-gradient(180deg, #877aff, #584dff);
+}
+
+.blue-bar {
+  background: linear-gradient(180deg, #6bb2ff, #3d7eff);
+}
+
+.cyan-bar {
+  background: linear-gradient(180deg, #65e6ff, #22b9e6);
+}
+
+.green-bar {
+  background: linear-gradient(180deg, #7ef0c4, #27bb8b);
+}
+
+.orange-bar {
+  background: linear-gradient(180deg, #ffd38d, #f59c45);
+}
+
+.violet-bar {
+  background: linear-gradient(180deg, #b8a4ff, #8b5cf6);
+}
+
+.chart-bars-quiz-nums {
+  position: relative;
+  top: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.chart-bar-quiz-num {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.chart-footer {
+  
 }
