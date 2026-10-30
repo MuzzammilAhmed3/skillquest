@@ -182,16 +182,38 @@
             <div class="panel-heading">
               <div>
                 <h2>Performance Overview</h2>
-                <p>Your recent quiz scores</p>
+                <p>Track your quiz scores over time</p>
               </div>
 
-              <span class="panel-icon">
-                <i class="fa-solid fa-chart-column"></i>
+              <div class="chart-heading-actions" aria-label="Select chart period">
+                <select class="chart-period">
+                  <option value="6">Last 6 Quizzes</option>
+                  <option value="10">Last 10 Quizzes</option>
+                  <option value="all">All Quizzes</option>
+                </select>
+
+                <span class="panel-icon">
+                  <i class="fa-solid fa-chart-column"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Chart Summary -->
+            <div class="chart-summary">
+              <div class="chart-average">
+                <h3>66.3%</h3>
+                <p>Average score</p>
+              </div>
+
+              <span class="chart-trend">
+                <i class="fa-solid fa-arrow-trend-up"></i> +12.5%
+                <small>vs. previous period</small>
               </span>
             </div>
 
             <!-- Performance Chart -->
             <div class="performance-chart">
+              <!--  Y Axis -->
               <div class="chart-y-axis">
                 <span>100%</span>
                 <span>75%</span>
@@ -200,7 +222,9 @@
                 <span>0%</span>
               </div>
 
+              <!-- Chart Area -->
               <div class="chart-area">
+                <!-- Grid Lines -->
                 <div class="chart-grid-lines">
                   <span></span>
                   <span></span>
@@ -214,57 +238,61 @@
                     <div class="chart-bar purple-bar" style="--bar-height: 100%">
                       <span>100%</span>
                     </div>
+
+                    <small>Quiz 1</small>
                   </div>
 
                   <div class="chart-bar-item">
                     <div class="chart-bar blue-bar" style="--bar-height: 25%">
                       <span>25%</span>
                     </div>
+
+                    <small>Quiz 2</small>
                   </div>
 
                   <div class="chart-bar-item">
                     <div class="chart-bar cyan-bar" style="--bar-height: 0%">
                       <span>0%</span>
                     </div>
+                    <small>Quiz 3</small>
                   </div>
 
                   <div class="chart-bar-item">
                     <div class="chart-bar green-bar" style="--bar-height: 50%">
                       <span>50%</span>
                     </div>
+                    <small>Quiz 4</small>
                   </div>
 
                   <div class="chart-bar-item">
                     <div class="chart-bar orange-bar" style="--bar-height: 75%">
                       <span>75%</span>
                     </div>
+
+                    <small>Quiz 5</small>
                   </div>
 
                   <div class="chart-bar-item">
                     <div class="chart-bar violet-bar" style="--bar-height: 80%">
                       <span>80%</span>
                     </div>
-                  </div>
-                </div>
 
-                <div class="chart-bars-quiz-nums">
-                  <small class="chart-bar-quiz-num">Quiz 1</small>
-                  <small class="chart-bar-quiz-num">Quiz 2</small>
-                  <small class="chart-bar-quiz-num">Quiz 3</small>
-                  <small class="chart-bar-quiz-num">Quiz 4</small>
-                  <small class="chart-bar-quiz-num">Quiz 5</small>
-                  <small class="chart-bar-quiz-num">Quiz 6</small>
+                    <small>Quiz 6</small>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="chart-footer">
-              <span>
-                <i class="fa-solid fa-circle"></i>
+              <div class="chart-legend">
+                <span class="legend-dot"></span>
                 Quiz Score
-              </span>
+              </div>
 
-              <p>Example performance data</p>
+              <p>
+                <i class="fa-regular fa-clock"></i>
+                Update after each quiz
+              </p>
             </div>
           </div>
 

@@ -190,18 +190,43 @@
         <section class="results-analysis">
           <!-- Performance Chart -->
           <div class="results-panel performance-panel">
-            <div class="results-panel-heading">
+            <!-- Panel Heading -->
+            <div class="panel-heading">
               <div>
                 <h2>Performance Overview</h2>
-                <p>Your recent quiz scores</p>
+                <p>Track your quiz scores over time</p>
               </div>
 
-              <span class="results-panel-icon">
-                <i class="fa-solid fa-chart-column"></i>
+              <div class="chart-heading-actions">
+                <select class="chart-period" aria-label="Select chart period">
+                  <option value="6">Last 6 Quizzes</option>
+                  <option value="10">Last 10 Quizzes</option>
+                  <option value="all">All Quizzes</option>
+                </select>
+
+                <span class="panel-icon">
+                  <i class="fa-solid fa-chart-column"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Performance Summary -->
+            <div class="chart-summary">
+              <div>
+                <h3>66.3%</h3>
+                <p>Average score</p>
+              </div>
+
+              <span class="chart-trend">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                +12.5%
+                <small>vs. previous period</small>
               </span>
             </div>
 
+            <!-- Performance Chart -->
             <div class="performance-chart">
+              <!-- Y Axis -->
               <div class="chart-y-axis">
                 <span>100%</span>
                 <span>75%</span>
@@ -210,7 +235,9 @@
                 <span>0%</span>
               </div>
 
+              <!-- Chart Area -->
               <div class="chart-area">
+                <!-- Grid Lines -->
                 <div class="chart-grid-lines">
                   <span></span>
                   <span></span>
@@ -219,45 +246,46 @@
                   <span></span>
                 </div>
 
+                <!-- Bars -->
                 <div class="chart-bars">
                   <div class="chart-bar-item">
-                    <div class="chart-bar purple-bar" style="--bar-height: 55%">
-                      <span>55%</span>
+                    <div class="chart-bar purple-bar" style="--bar-height: 100%">
+                      <span>100%</span>
                     </div>
                     <small>Quiz 1</small>
                   </div>
 
                   <div class="chart-bar-item">
-                    <div class="chart-bar blue-bar" style="--bar-height: 68%">
-                      <span>68%</span>
+                    <div class="chart-bar blue-bar" style="--bar-height: 25%">
+                      <span>25%</span>
                     </div>
                     <small>Quiz 2</small>
                   </div>
 
                   <div class="chart-bar-item">
-                    <div class="chart-bar cyan-bar" style="--bar-height: 62%">
-                      <span>62%</span>
+                    <div class="chart-bar cyan-bar" style="--bar-height: 0%">
+                      <span>0%</span>
                     </div>
                     <small>Quiz 3</small>
                   </div>
 
                   <div class="chart-bar-item">
-                    <div class="chart-bar green-bar" style="--bar-height: 78%">
-                      <span>78%</span>
+                    <div class="chart-bar green-bar" style="--bar-height: 50%">
+                      <span>50%</span>
                     </div>
                     <small>Quiz 4</small>
                   </div>
 
                   <div class="chart-bar-item">
-                    <div class="chart-bar orange-bar" style="--bar-height: 72%">
-                      <span>72%</span>
+                    <div class="chart-bar orange-bar" style="--bar-height: 75%">
+                      <span>75%</span>
                     </div>
                     <small>Quiz 5</small>
                   </div>
 
                   <div class="chart-bar-item">
-                    <div class="chart-bar violet-bar" style="--bar-height: 90%">
-                      <span>90%</span>
+                    <div class="chart-bar violet-bar" style="--bar-height: 80%">
+                      <span>80%</span>
                     </div>
                     <small>Quiz 6</small>
                   </div>
@@ -265,13 +293,17 @@
               </div>
             </div>
 
+            <!-- Chart Footer -->
             <div class="chart-footer">
-              <span>
-                <i class="fa-solid fa-circle"></i>
-                Quiz score
-              </span>
+              <div class="chart-legend">
+                <span class="legend-dot"></span>
+                Quiz Score
+              </div>
 
-              <p>Example performance data</p>
+              <p>
+                <i class="fa-regular fa-clock"></i>
+                Updated after each quiz
+              </p>
             </div>
           </div>
 
