@@ -1373,7 +1373,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-sm);
-  margin-bottom: var(--space-lg);
+  margin-bottom: 20px;
 }
 
 .panel-heading h2 {
@@ -1603,4 +1603,141 @@ img {
   gap: 6px;
   font-size: 11px;
   color: var(--muted);
+}
+
+.skills-panel .panel-heading {
+  margin-bottom: 30px;
+}
+
+.skill-progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-progress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-progress-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.skill-progress-heading span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d9e1f4;
+}
+
+.skill-progress-heading .topic-icon {
+  width: 20px;
+  font-size: 18px;
+}
+
+.office-color {
+  color: var(--office-accent);
+}
+
+.frontend-color {
+  color: var(--frontend-accent);
+}
+
+.backend-color {
+  color: var(--backend-accent);
+}
+
+.database-color {
+  color: var(--database-accent);
+}
+
+.others-color {
+  color: var(--others-accent);
+}
+
+.skill-progress-heading strong {
+  font-weight: 750;
+}
+
+.skill-progress-track {
+  width: 100%;
+  height: 7px;
+  /* overflow: hidden; */
+  border-radius: 20px;
+  background-color: #202b40;
+}
+
+.skill-progress-fill {
+  display: block;
+  width: var(--progress);
+  height: 100%;
+  border-radius: inherit;
+  animation: results-progress-grow 1s ease both;
+}
+
+.office-fill {
+  background-color: var(--office-accent);
+}
+
+.frontend-fill {
+  background-color: var(--frontend-accent);
+}
+
+.backend-fill {
+  background-color: var(--backend-accent);
+}
+
+.database-fill {
+  background-color: var(--database-accent);
+}
+
+.others-fill {
+  background-color: var(--others-accent);
+}
+
+@keyframes results-progress-grow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--progress);
+  }
+}
+
+.skills-tips {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 48px;
+  padding: 16px 12px;
+  background-color: #ffd47812;
+  border: 1px solid #fcc85846;
+  border-radius: 14px;
+}
+
+.skills-tips-icon {
+  color: #ffbf34;
+  opacity: 0.7;  
+  font-size: 28px;
+}
+
+.skills-tips p {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.skills-tips strong {
+  font-size: 14px;
+  color: var(--text);
 }
