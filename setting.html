@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillQuest | Settings</title>
+
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="https://kit.fontawesome.com/7c92364311.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <a href="../index.html" class="brand">
+          <i class="fa-solid fa-graduation-cap brand-icon"></i>
+
+          <div class="brand-info">
+            <h2>Skill<span class="highlight">Quest</span></h2>
+
+            <small>
+              Learn<i class="fa-solid fa-circle dot"></i>Practice<i
+                class="fa-solid fa-circle dot"
+              ></i
+              >Grow
+            </small>
+          </div>
+        </a>
+
+        <div class="nav-divider"></div>
+
+        <nav class="navigation">
+          <a href="../index.html" class="nav-link">
+            <i class="fa-regular fa-house nav-icon"></i>Home
+          </a>
+
+          <a href="./topics.html" class="nav-link">
+            <i class="fa-solid fa-layer-group nav-icon"></i>Topics
+          </a>
+
+          <a href="./mix-quiz.html" class="nav-link">
+            <i class="fa-solid fa-shuffle nav-icon"></i>Mix Quiz
+          </a>
+
+          <a href="./results.html" class="nav-link">
+            <i class="fa-solid fa-chart-simple nav-icon"></i>My Results
+          </a>
+
+          <a href="./settings.html" class="nav-link active">
+            <i class="fa-solid fa-gear nav-icon"></i>Settings
+          </a>
+        </nav>
+
+        <div class="profile">
+          <div class="avatar">M</div>
+
+          <div class="profile-info">
+            <strong>Muzzammil</strong>
+            <small>Beginner</small>
+          </div>
+
+          <i class="fa-solid fa-angle-down arrow-down"></i>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content settings-page">
+        <!-- Topbar -->
+        <header class="topbar">
+          <div class="topbar-left">
+            <span>⚙</span>
+            Settings
+          </div>
+
+          <div class="topbar-right">
+            <button type="button" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button type="button" aria-label="Notifications">
+              <i class="fa-regular fa-bell"></i>
+            </button>
+
+            <div class="user-info">
+              <div class="user-avatar">M</div>
+              <span class="username">Muzzammil</span>
+              <i class="fa-solid fa-angle-down arrow-down"></i>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+          <div>
+            <p class="eyebrow">PERSONALIZE YOUR EXPERIENCE</p>
+
+            <h1 class="title">Account <span>Settings</span></h1>
+
+            <p class="desc">
+              Manage your profile, customize your learning experience, and control how SkillQuest
+              works for you.
+            </p>
+          </div>
+
+          <div class="settings-hero-icon">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+        </section>
+
+        <!-- Settings Layout -->
+        <section class="settings-layout">
+          <!-- Settings Navigation -->
+          <aside class="settings-sidebar">
+            <div class="settings-sidebar-heading">
+              <h3>Settings Menu</h3>
+              <p>Manage your preferences</p>
+            </div>
+
+            <a href="#profile-settings" class="settings-nav-link active">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile Information</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#learning-settings" class="settings-nav-link">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Learning Preferences</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#notification-settings" class="settings-nav-link">
+              <i class="fa-regular fa-bell"></i>
+              <span>Notifications</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#appearance-settings" class="settings-nav-link">
+              <i class="fa-solid fa-palette"></i>
+              <span>Appearance</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#security-settings" class="settings-nav-link">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Security</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </aside>
+
+          <!-- Settings Content -->
+          <div class="settings-content">
+            <!-- Profile Information -->
+            <section class="settings-card" id="profile-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon purple">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+
+                <div>
+                  <h2>Profile Information</h2>
+                  <p>Update your personal information and profile details.</p>
+                </div>
+              </div>
+
+              <div class="profile-preview">
+                <div class="settings-avatar">M</div>
+
+                <div class="profile-preview-info">
+                  <h3>Muzzammil Ahmed</h3>
+                  <p>Beginner Learner</p>
+                  <small>Member since October 2026</small>
+                </div>
+
+                <button type="button" class="change-photo-btn">
+                  <i class="fa-solid fa-camera"></i>
+                  Change Photo
+                </button>
+              </div>
+
+              <div class="settings-divider"></div>
+
+              <form class="settings-form">
+                <div class="settings-form-grid">
+                  <div class="settings-field">
+                    <label for="firstName">First Name</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      value="Muzzammil"
+                      placeholder="Enter first name"
+                    />
+                  </div>
+
+                  <div class="settings-field">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" value="Ahmed" placeholder="Enter last name" />
+                  </div>
+
+                  <div class="settings-field">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      value="muzzammil@example.com"
+                      placeholder="Enter email address"
+                    />
+                  </div>
+
+                  <div class="settings-field">
+                    <label for="username">Username</label>
+                    <input
+                      type="text"
+                      id="username"
+                      value="muzzammil"
+                      placeholder="Enter username"
+                    />
+                  </div>
+                </div>
+
+                <div class="settings-form-actions">
+                  <button type="reset" class="settings-cancel-btn">Cancel</button>
+
+                  <button type="submit" class="settings-save-btn">
+                    <i class="fa-solid fa-check"></i>
+                    Save Changes
+                  </button>
+                </div>
+              </form>
+            </section>
+
+            <!-- Learning Preferences -->
+            <section class="settings-card" id="learning-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon green">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div>
+                  <h2>Learning Preferences</h2>
+                  <p>Customize your quiz experience and learning goals.</p>
+                </div>
+              </div>
+
+              <div class="settings-form-grid">
+                <div class="settings-field">
+                  <label for="difficulty">Default Difficulty</label>
+
+                  <select id="difficulty">
+                    <option value="easy" selected>Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                  </select>
+                </div>
+
+                <div class="settings-field">
+                  <label for="questions">Questions Per Quiz</label>
+
+                  <select id="questions">
+                    <option value="10" selected>10 Questions</option>
+                    <option value="15">15 Questions</option>
+                    <option value="20">20 Questions</option>
+                    <option value="30">30 Questions</option>
+                  </select>
+                </div>
+
+                <div class="settings-field">
+                  <label for="timer">Quiz Timer</label>
+
+                  <select id="timer">
+                    <option value="enabled" selected>Enabled</option>
+                    <option value="disabled">Disabled</option>
+                  </select>
+                </div>
+
+                <div class="settings-field">
+                  <label for="language">Language</label>
+
+                  <select id="language">
+                    <option value="english" selected>English</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="settings-divider"></div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Show Correct Answers</strong>
+                  <p>Show the correct answer after each question.</p>
+                </div>
+
+                <label class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Shuffle Questions</strong>
+                  <p>Randomize the order of questions in every quiz.</p>
+                </div>
+
+                <label class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </section>
+
+            <!-- Notifications -->
+            <section class="settings-card" id="notification-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon orange">
+                  <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div>
+                  <h2>Notifications</h2>
+                  <p>Choose which notifications you want to receive.</p>
+                </div>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Learning Reminders</strong>
+                  <p>Receive reminders to continue your learning journey.</p>
+                </div>
+
+                <label class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Quiz Results</strong>
+                  <p>Get notified when your quiz results are available.</p>
+                </div>
+
+                <label class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>New Topics</strong>
+                  <p>Receive updates when new learning topics are added.</p>
+                </div>
+
+                <label class="settings-toggle">
+                  <input type="checkbox" />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Weekly Progress Report</strong>
+                  <p>Get a summary of your weekly learning performance.</p>
+                </div>
+
+                <label class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </section>
+
+            <!-- Appearance -->
+            <section class="settings-card" id="appearance-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon blue">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+
+                <div>
+                  <h2>Appearance</h2>
+                  <p>Customize how SkillQuest looks on your device.</p>
+                </div>
+              </div>
+
+              <div class="appearance-options">
+                <label class="appearance-choice selected">
+                  <input type="radio" name="theme" value="dark" checked />
+
+                  <div class="theme-preview dark-preview">
+                    <div></div>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <strong>Dark Mode</strong>
+                  <small>Easy on your eyes</small>
+                </label>
+
+                <label class="appearance-choice">
+                  <input type="radio" name="theme" value="light" />
+
+                  <div class="theme-preview light-preview">
+                    <div></div>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <strong>Light Mode</strong>
+                  <small>Bright and clean</small>
+                </label>
+
+                <label class="appearance-choice">
+                  <input type="radio" name="theme" value="system" />
+
+                  <div class="theme-preview system-preview">
+                    <div></div>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <strong>System Default</strong>
+                  <small>Follow device settings</small>
+                </label>
+              </div>
+            </section>
+
+            <!-- Security -->
+            <section class="settings-card" id="security-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon red">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+                  <h2>Account Security</h2>
+                  <p>Manage your password and account protection.</p>
+                </div>
+              </div>
+
+              <div class="settings-field security-password">
+                <label for="currentPassword">Current Password</label>
+                <input type="password" id="currentPassword" placeholder="Enter current password" />
+              </div>
+
+              <div class="settings-form-grid">
+                <div class="settings-field">
+                  <label for="newPassword">New Password</label>
+                  <input type="password" id="newPassword" placeholder="Enter new password" />
+                </div>
+
+                <div class="settings-field">
+                  <label for="confirmPassword">Confirm New Password</label>
+                  <input type="password" id="confirmPassword" placeholder="Confirm new password" />
+                </div>
+              </div>
+
+              <div class="settings-form-actions">
+                <button type="button" class="settings-save-btn">
+                  <i class="fa-solid fa-lock"></i>
+                  Update Password
+                </button>
+              </div>
+
+              <div class="settings-divider"></div>
+
+              <div class="danger-zone">
+                <div>
+                  <h3>Delete Account</h3>
+                  <p>Permanently delete your SkillQuest account and associated learning data.</p>
+                </div>
+
+                <button type="button" class="delete-account-btn">
+                  <i class="fa-regular fa-trash-can"></i>
+                  Delete Account
+                </button>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-brand">
+            <span class="footer-logo">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+
+            <div class="footer-text">
+              <strong>Skill<span>Quest</span></strong>
+              <small>Your journey to mastery starts here.</small>
+            </div>
+          </div>
+
+          <div class="footer-divider"></div>
+
+          <div class="footer-motto">
+            <span><i class="fa-solid fa-book-open"></i>Learn</span>
+            <i class="fa-solid fa-circle footer-dot"></i>
+            <span><i class="fa-solid fa-bolt"></i>Practice</span>
+            <i class="fa-solid fa-circle footer-dot"></i>
+            <span><i class="fa-solid fa-trophy"></i>Improve</span>
+          </div>
+
+          <p class="footer-copyright">
+            <span>Made with <i class="fa-solid fa-heart"></i></span>
+            for curious minds
+            <span class="copyright">&copy; 2026 SkillQuest</span>
+          </p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
