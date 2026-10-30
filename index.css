@@ -178,6 +178,201 @@
    ANALYSIS PANELS
 ======================================== */
 
+.results-page .results-analysis {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 18px;
+  margin-top: var(--results-section-gap);
+}
+
+.results-page .results-panel {
+  min-width: 0;
+  padding: var(--results-panel-padding);
+  background: var(--results-panel-bg);
+  border: 1px solid var(--results-panel-border);
+  border-radius: var(--results-panel-radius);
+}
+
+.results-page .results-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.results-page .results-panel-heading h2,
+.results-page .results-section-heading h2 {
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.results-page .results-panel-heading p,
+.results-page .results-section-heading p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.results-page .results-panel-icon {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: var(--results-purple);
+  background: #8b82ff14;
+  border: 1px solid #8b82ff25;
+  border-radius: 11px;
+  font-size: 17px;
+}
+
+/* ========================================
+   PERFORMANCE BAR CHART
+======================================== */
+
+.results-page .performance-chart {
+  display: grid;
+  grid-template-columns: 39px minmax(0, 1fr);
+  gap: 8px;
+  height: 235px;
+}
+
+.results-page .chart-y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  color: var(--muted);
+  font-size: 10px;
+  text-align: right;
+}
+
+.results-page .chart-area {
+  position: relative;
+  min-width: 0;
+  height: 100%;
+}
+
+.results-page .chart-grid-lines {
+  position: absolute;
+  inset: 0 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.results-page .chart-grid-lines span {
+  width: 100%;
+  border-top: 1px dashed #2b3650;
+}
+
+.results-page .chart-bars {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 10px;
+}
+
+.results-page .chart-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  min-width: 0;
+}
+
+.results-page .chart-bar {
+  position: relative;
+  width: min(100%, 37px);
+  height: var(--bar-height);
+  min-height: 20px;
+  margin-top: auto;
+  border-radius: 7px 7px 2px 2px;
+  transition:
+    height var(--results-transition),
+    filter var(--results-transition);
+}
+
+.results-page .chart-bar:hover {
+  filter: brightness(1.25);
+}
+
+.results-page .chart-bar > span {
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  color: #dce4fa;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.results-page .purple-bar {
+  background: linear-gradient(180deg, #a69cff, #7065ff);
+}
+
+.results-page .blue-bar {
+  background: linear-gradient(180deg, #79baff, #4b86ff);
+}
+
+.results-page .cyan-bar {
+  background: linear-gradient(180deg, #65e6ff, #22b9e6);
+}
+
+.results-page .green-bar {
+  background: linear-gradient(180deg, #7ef0c4, #27bb8b);
+}
+
+.results-page .orange-bar {
+  background: linear-gradient(180deg, #ffd38d, #f59c45);
+}
+
+.results-page .violet-bar {
+  background: linear-gradient(180deg, #b8a4ff, #8b5cf6);
+}
+
+.results-page .chart-bar-item > small {
+  color: var(--muted);
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.results-page .chart-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.results-page .chart-footer > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #aab5cc;
+  font-size: 11px;
+}
+
+.results-page .chart-footer > span i {
+  color: var(--results-purple);
+  font-size: 8px;
+}
+
+.results-page .chart-footer > p {
+  color: var(--muted);
+  font-size: 10px;
+}
+
 .results-analysis {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
@@ -352,7 +547,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-
 }
 
 .chart-bar-item small {
@@ -360,7 +554,6 @@
   /* margin-bottom: 10px; */
   position: relative;
   top: 10px;
-
 }
 
 .chart-bar {
@@ -373,7 +566,6 @@
   transition:
     filter var(--transition-normal),
     height var(--transition-normal);
-    
 }
 
 .chart-bar:hover {
