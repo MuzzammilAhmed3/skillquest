@@ -29,7 +29,7 @@
         <div class="nav-divider"></div>
 
         <nav class="navigation">
-          <a href="../index.html" class="nav-link active"
+          <a href="../index.html" class="nav-link"
             ><i class="fa-regular fa-house nav-icon"></i>Home</a
           >
 
@@ -45,7 +45,7 @@
             ><i class="fa-solid fa-chart-simple nav-icon"></i>My Results</a
           >
 
-          <a href="./settings.html" class="nav-link"
+          <a href="./settings.html" class="nav-link active"
             ><i class="fa-solid fa-gear nav-icon"></i>Settings</a
           >
         </nav>
@@ -87,7 +87,7 @@
 
         <!-- Hero Section -->
         <section class="hero">
-          <div>
+          <div class="hero-content">
             <p class="eyebrow">PERSONALIZE YOUR EXPERIENCE</p>
 
             <h1 class="title">Account <span>Settings</span></h1>
@@ -98,10 +98,161 @@
             </p>
           </div>
 
-          <div class="settings-hero-icon">
+          <div class="hero-icon">
             <i class="fa-solid fa-sliders"></i>
           </div>
         </section>
+
+        <section class="settings-layout">
+          <!-- Settings Navigation -->
+          <aside class="settings-sidebar">
+            <div class="sidebar-heading">
+              <h3>Settings Menu</h3>
+              <p>Manage your preferences</p>
+            </div>
+
+            <a href="#profile-settings" class="settings-nav-link active">
+              <i class="fa-regular fa-user sidebar-nav-icon"></i>
+
+              <span>Profile Information</span>
+
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#learning-settings" class="settings-nav-link">
+              <i class="fa-solid fa-book-open sidebar-nav-icon"></i>
+
+              <span>Learning Preferences</span>
+
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#notification-settings" class="settings-nav-link">
+              <i class="fa-regular fa-bell sidebar-nav-icon"></i>
+
+              <span>Notifications</span>
+
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="appearance-settings" class="settings-nav-link">
+              <i class="fa-solid fa-palette sidebar-nav-icon"></i>
+
+              <span>Appearance</span>
+
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#security-settings" class="settings-nav-link">
+              <i class="fa-solid fa-shield-halved sidebar-nav-icon"></i>
+
+              <span>Security</span>
+
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </aside>
+
+          <!-- Settings Content -->
+          <div class="settings-content">
+            <!-- Profile Information -->
+            <section class="settings-card" id="profile-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon purple">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+
+                <div>
+                  <h2>Profile Information</h2>
+                  <p>Update your personal information and profile details.</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Learning Preferences -->
+            <section class="settings-card" id="learning-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon green">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div>
+                  <h2>Learning Preferences</h2>
+                  <p>Customize your quiz experience and learning goals.</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Notifications -->
+            <section class="settings-card" id="notification-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon orange">
+                  <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div>
+                  <h2>Notifications</h2>
+                  <p>Choose which notifications you want to receive.</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Appearance -->
+            <section class="settings-card" id="appearance-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon blue">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+
+                <div>
+                  <h2>Appearance</h2>
+                  <p>Customize how SkillQuest looks on your device.</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Security -->
+            <section class="settings-card" id="security-settings">
+              <div class="settings-card-heading">
+                <div class="settings-heading-icon red">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+                  <h2>Account Security</h2>
+                  <p>Manage your password and account protection.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-brand">
+            <span class="footer-logo">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+            <div class="footer-text">
+              <strong>Skill<span>Quest</span></strong>
+              <small>Your journey to mastery starts here.</small>
+            </div>
+          </div>
+
+          <div class="footer-divider"></div>
+
+          <div class="footer-motto">
+            <span><i class="fa-solid fa-book-open"></i>Learn</span>
+            <i class="fa-solid fa-circle footer-dot"></i>
+            <span><i class="fa-solid fa-bolt"></i>Practice</span>
+            <i class="fa-solid fa-circle footer-dot"></i>
+            <span><i class="fa-solid fa-trophy"></i>Improve</span>
+          </div>
+
+          <p class="footer-copyright">
+            <span>Made with <i class="fa-solid fa-heart"></i></span> for curious minds
+            <span class="copyright">&copy; 2026 SkillQuest</span>
+          </p>
+        </footer>
       </main>
     </div>
   </body>

@@ -83,13 +83,13 @@
   transition: all var(--transition-fast);
 }
 
-.settings-nav-link > i:first-child {
+.settings-nav-link > .sidebar-nav-icon {
   width: 19px;
   font-size: 15px;
   text-align: center;
 }
 
-.settings-nav-link > i:last-child {
+.settings-nav-link > .fa-angle-right {
   margin-left: auto;
   font-size: 11px;
   opacity: 0;
@@ -106,7 +106,7 @@
   border-color: #7065ff35;
 }
 
-.settings-nav-link.active > i:last-child {
+.settings-nav-link.active > .fa-angle-right {
   opacity: 1;
 }
 
@@ -125,7 +125,7 @@
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  scroll-margin-top: 20px;
+  scroll-margin-top: 18px;
 }
 
 .settings-card-heading {
