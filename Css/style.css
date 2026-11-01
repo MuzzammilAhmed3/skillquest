@@ -2539,3 +2539,8 @@ img {
 .system-preview span {
   background: linear-gradient(90deg, #35425c 50%, #aab5c7 50%);
 }
+
+.security-password {
+  margin-bottom: 18px;
+  width: 100%;
+}
