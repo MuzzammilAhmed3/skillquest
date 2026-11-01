@@ -311,7 +311,7 @@ img {
 .user-avatar {
   width: 39px;
   height: 39px;
-  border-radius: 50%;
+  border-radius: 15px;
   font-size: 19px;
 }
 
@@ -2368,6 +2368,10 @@ img {
   border-bottom: 1px solid #23314b99;
 }
 
+#learning-settings .settings-divider {
+  margin-bottom: 0;
+} 
+
 .settings-option:last-child {
   border-bottom: none;
   padding-bottom: 0;
@@ -2543,4 +2547,50 @@ img {
 .security-password {
   margin-bottom: 18px;
   width: 100%;
+}
+
+.danger-zone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px;
+  background: #ff7d9208;
+  border: 1px solid #ff7d922b;
+  border-radius: 11px;
+}
+
+.danger-zone h3 {
+  color: #ff9aaa;
+  font-size: 14px;
+}
+
+.danger-zone p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.delete-account-btn {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  flex-shrink: 0;
+  padding: 9px 12px;
+  color: #ff8b9d;
+  background: #ff7d9210;
+  border: 1px solid #ff7d9245;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.delete-account-btn:hover {
+  color: white;
+  background: #e64f6b;
+  border-color: #e64f6b;
 }
