@@ -2434,3 +2434,108 @@ img {
   background: white;
   transform: translateX(20px);
 }
+
+.appearance-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.appearance-choice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px;
+  background: var(--surface-main);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.appearance-choice:hover {
+  border-color: #5550a3;
+}
+
+.appearance-choice.selected {
+  background: #7065ff0c;
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px #7065ff35;
+}
+
+.appearance-choice input {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: var(--primary);
+}
+
+.appearance-choice strong {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.appearance-choice small {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.theme-preview {
+  height: 83px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.theme-preview div {
+  width: 35%;
+  height: 9px;
+  border-radius: 4px;
+}
+
+.theme-preview span {
+  width: 75%;
+  height: 7px;
+  border-radius: 4px;
+}
+
+.dark-preview {
+  background: #0b1222;
+}
+
+.dark-preview div {
+  background: #8175ff;
+}
+
+.dark-preview span {
+  background: #35425c;
+}
+
+.light-preview {
+  background: #e9eef8;
+  border-color: #cbd5e1;
+}
+
+.light-preview div {
+  background: #7164ff;
+}
+
+.light-preview span {
+  background: #aab5c7;
+}
+
+.system-preview {
+  background: linear-gradient(110deg, #0b1222 50%, #e9eef8 50%);
+}
+
+.system-preview div {
+  background: linear-gradient(90deg, #8175ff 50%, #7164ff 50%);
+}
+
+.system-preview span {
+  background: linear-gradient(90deg, #35425c 50%, #aab5c7 50%);
+}
