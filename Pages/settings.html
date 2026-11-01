@@ -135,7 +135,7 @@
               <i class="fa-solid fa-angle-right"></i>
             </a>
 
-            <a href="appearance-settings" class="settings-nav-link">
+            <a href="#appearance-settings" class="settings-nav-link">
               <i class="fa-solid fa-palette sidebar-nav-icon"></i>
 
               <span>Appearance</span>
@@ -166,6 +166,60 @@
                   <p>Update your personal information and profile details.</p>
                 </div>
               </div>
+
+              <div class="profile-preview">
+                <div class="settings-avatar">M</div>
+
+                <div class="profile-preview-info">
+                  <h3>Muzzammil Ahmed</h3>
+                  <p>Beginner Learner</p>
+                  <small>Member since October 2026</small>
+                </div>
+
+                <button type="button" class="change-photo-btn">
+                  <i class="fa-regular fa-camera"></i>
+                  Change Photo
+                </button>
+              </div>
+
+              <div class="settings-divider"></div>
+
+              <form action="" class="settings-form">
+                <div class="settings-form-grid">
+                  <div class="settings-field">
+                    <label for="firstName">First Name</label>
+
+                    <input type="text" id="firstName" placeholder="Enter First Name" />
+                  </div>
+
+                  <div class="settings-field">
+                    <label for="lastName">Last Name</label>
+
+                    <input type="text" id="lastName" placeholder="Enter Last Name" />
+                  </div>
+
+                  <div class="settings-field">
+                    <label for="email">Email Address</label>
+
+                    <input type="email" id="email" placeholder="Enter Email Address" />
+                  </div>
+
+                  <div class="settings-field">
+                    <label for="username">Username</label>
+
+                    <input type="text" id="username" placeholder="Enter Username" />
+                  </div>
+                </div>
+
+                <div class="settings-form-actions">
+                  <button type="reset" class="settings-cancel-btn">Cancel</button>
+
+                  <button type="submit" class="settings-save-btn">
+                    <i class="fa-solid fa-check"></i>
+                    Save Changes
+                  </button>
+                </div>
+              </form>
             </section>
 
             <!-- Learning Preferences -->
@@ -180,6 +234,72 @@
                   <p>Customize your quiz experience and learning goals.</p>
                 </div>
               </div>
+
+              <div class="settings-form-grid">
+                <div class="settings-field">
+                  <label for="difficulty">Default Difficulty</label>
+
+                  <select id="difficulty">
+                    <option value="easy" selected>Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                  </select>
+                </div>
+
+                <div class="settings-field">
+                  <label for="questions">Questions Per Quiz</label>
+
+                  <select id="questions">
+                    <option value="10" selected>10 Questions</option>
+                    <option value="15">15 Questions</option>
+                    <option value="20">20 Questions</option>
+                    <option value="30">30 Questions</option>
+                  </select>
+                </div>
+
+                <div class="settings-field">
+                  <label for="timer">Quiz Timer</label>
+
+                  <select id="timer">
+                    <option value="enabled" selected>Enabled</option>
+                    <option value="disabled">Disabled</option>
+                  </select>
+                </div>
+
+                <div class="settings-field">
+                  <label for="language">Language</label>
+
+                  <select id="language">
+                    <option value="english" selected>English</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="settings-divider"></div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Show Correct Answers</strong>
+                  <p>Show the correct answer after each question.</p>
+                </div>
+
+                <div class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </div>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Show Correct Answers</strong>
+                  <p>Show the correct answer after each question.</p>
+                </div>
+
+                <div class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </div>
+              </div>
             </section>
 
             <!-- Notifications -->
@@ -192,6 +312,54 @@
                 <div>
                   <h2>Notifications</h2>
                   <p>Choose which notifications you want to receive.</p>
+                </div>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Learning Reminders</strong>
+                  <p>Receive reminders to continue your learning journey.</p>
+                </div>
+
+                <div class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </div>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Quiz Results</strong>
+                  <p>Get notified when your quiz results are available.</p>
+                </div>
+
+                <div class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </div>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>New Topics</strong>
+                  <p>Receive updates when new learning topics are added.</p>
+                </div>
+
+                <div class="settings-toggle">
+                  <input type="checkbox" />
+                  <span class="toggle-slider"></span>
+                </div>
+              </div>
+
+              <div class="settings-option">
+                <div class="settings-option-info">
+                  <strong>Weekly Progress Report</strong>
+                  <p>Get a summary of your weekly learning performance.</p>
+                </div>
+
+                <div class="settings-toggle">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
                 </div>
               </div>
             </section>

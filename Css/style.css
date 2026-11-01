@@ -2129,7 +2129,7 @@ img {
 .settings-content {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
   min-height: 0;
 }
 
@@ -2139,13 +2139,13 @@ img {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  scroll-margin-top: 18px;
+  scroll-margin-top: 20px;
 }
 
 .settings-card-heading {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   margin-bottom: 20px;
 }
 
@@ -2194,4 +2194,243 @@ img {
   font-size: 13px;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.profile-preview {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: var(--surface-main);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.settings-avatar {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: white;
+  background: linear-gradient(135deg, #806bff, #30b8ef);
+  border-radius: 16px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.profile-preview-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.profile-preview-info p {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #aaa3ff;
+}
+
+.profile-preview-info small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.change-photo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  padding: 10px 12px;
+  color: var(--secondary);
+  background: #38d9ff0c;
+  border: 1px solid #38d9ff0c;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.change-photo-btn:hover {
+  background: #38d9ff18;
+  border-color: var(--secondary);
+}
+
+.settings-divider {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  background: var(--border);
+}
+
+.settings-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 15px;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-field label {
+  color: #d9e1f4;
+  font-size: 13px;
+  font-weight: 650;
+  margin-left: 3px;
+}
+
+.settings-field input,
+.settings-field select {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  outline: none;
+  color: var(--text);
+  background: var(--surface-main);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.settings-field input::placeholder {
+  color: #687792;
+}
+
+.settings-field input:focus,
+.settings-field select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px #7065ff15;
+}
+
+.settings-field select option {
+  color: var(--text);
+  background: var(--card);
+  padding: 12px;
+}
+
+.settings-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.settings-cancel-btn,
+.settings-save-btn {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.25s;
+}
+
+.settings-cancel-btn {
+  color: var(--muted);
+  background: transparent;
+  border-color: var(--border);
+}
+
+.settings-cancel-btn:hover {
+  color: var(--text);
+  background: var(--card-hover);
+}
+
+.settings-save-btn {
+  color: var(--text);
+  background: linear-gradient(100deg, #5547dc, #7164ff);
+  border: 1px solid #938aff;
+  box-shadow: 0 5px 16px #6254ff20;
+}
+
+.settings-save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px #6254ff35;
+}
+
+.settings-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #23314b99;
+}
+
+.settings-option:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.settings-option-info strong {
+  color: #e6ebf8;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.settings-option-info p {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.settings-toggle {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 23px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.settings-toggle input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.toggle-slider {
+  position: absolute;
+  inset: 0;
+  background: #28354d;
+  border: 1px solid #3a4861;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  inset: 2px 0 0 2px;
+  width: 17px;
+  height: 17px;
+  background: #a3b0ca;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.settings-toggle input:checked + .toggle-slider {
+  background: #7065ff;
+  border-color: #8b82ff;
+}
+
+.settings-toggle input:checked + .toggle-slider::before {
+  background: white;
+  transform: translateX(20px);
 }
