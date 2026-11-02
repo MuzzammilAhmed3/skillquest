@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillQuest | Subtopics</title>
+
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://kit.fontawesome.com/7c92364311.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <a href="../index.html" class="brand">
+          <i class="fa-solid fa-graduation-cap brand-icon"></i>
+
+          <div class="brand-info">
+            <h2>Skill<span class="highlight">Quest</span></h2>
+
+            <small
+              >Learn<i class="fa-solid fa-circle dot"></i>Practice<i
+                class="fa-solid fa-circle dot"
+              ></i
+              >Grow</small
+            >
+          </div>
+        </a>
+
+        <div class="nav-divider"></div>
+
+        <nav class="navigation">
+          <a href="../index.html" class="nav-link">
+            <i class="fa-regular fa-house nav-icon"></i>Home
+          </a>
+          <a href="topics.html" class="nav-link active">
+            <i class="fa-solid fa-layer-group nav-icon"></i>Topics
+          </a>
+          <a href="mix-quiz.html" class="nav-link">
+            <i class="fa-solid fa-shuffle nav-icon"></i>Mix Quiz
+          </a>
+          <a href="results.html" class="nav-link">
+            <i class="fa-solid fa-chart-simple nav-icon"></i>My Results
+          </a>
+          <a href="settings.html" class="nav-link">
+            <i class="fa-solid fa-gear nav-icon"></i>Settings
+          </a>
+        </nav>
+
+        <div class="profile">
+          <div class="avatar">M</div>
+
+          <div class="profile-info">
+            <strong>Muzzammil</strong>
+
+            <small>Beginner</small>
+          </div>
+
+          <i class="fa-solid fa-angle-down arrow-down"></i>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content subtopics-page">
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+          <div class="topbar-left">
+            <a href="../index.html">Home</a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <a href="topics.html">Topics</a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span>Subtopics</span>
+
+            <!-- <span>▦</span>Subtopics -->
+          </div>
+
+          <div class="topbar-right">
+            <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            <button aria-label="Notifications"><i class="fa-regular fa-bell"></i></button>
+
+            <div class="user-info">
+              <div class="user-avatar">M</div>
+
+              <span class="username">Muzzammil</span>
+
+              <i class="fa-solid fa-angle-down arrow-down"></i>
+            </div>
+          </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-content">
+            <div>
+              <span class="eyebrow"> YOUR LEARNING SPACE </span>
+
+              <h1 class="title">Explore Your <span>Subtopics</span></h1>
+              <p class="desc">
+                Every great skill starts with small steps. Explore individual learning topics,
+                understand the fundamentals, and challenge yourself with carefully designed quizzes.
+              </p>
+            </div>
+
+            <div class="hero-action">
+              <i class="fa-solid fa-book-open"></i>
+              <strong>25</strong>
+              <small>Learning Topics</small>
+            </div>
+          </div>
+        </section>
+
+        <div class="st-container">
+          <!-- CATEGORY SELECTOR -->
+          <section class="st-category-section">
+            <div class="st-section-heading">
+              <div>
+                <h2>Choose Your Category</h2>
+                <p>Select a category to jump to its available subtopics.</p>
+              </div>
+            </div>
+
+            <div class="st-category-tabs">
+              <a class="st-category-tab active" href="#office">
+                <span class="st-tab-icon"><i class="fa-solid fa-file-word"></i></span>
+                <span class="st-tab-info"
+                  ><strong>MS Office</strong><small>5 Learning Topics</small></span
+                >
+              </a>
+
+              <a class="st-category-tab" href="#frontend">
+                <span class="st-tab-icon"><i class="fa-solid fa-code"></i></span>
+                <span class="st-tab-info"
+                  ><strong>Frontend</strong><small>5 Learning Topics</small></span
+                >
+              </a>
+
+              <a class="st-category-tab" href="#backend">
+                <span class="st-tab-icon"><i class="fa-solid fa-server"></i></span>
+                <span class="st-tab-info"
+                  ><strong>Backend</strong><small>5 Learning Topics</small></span
+                >
+              </a>
+
+              <a class="st-category-tab" href="#database">
+                <span class="st-tab-icon"><i class="fa-solid fa-database"></i></span>
+                <span class="st-tab-info"
+                  ><strong>Database</strong><small>5 Learning Topics</small></span
+                >
+              </a>
+
+              <a class="st-category-tab" href="#others">
+                <span class="st-tab-icon"><i class="fa-solid fa-toolbox"></i></span>
+                <span class="st-tab-info"
+                  ><strong>Others</strong><small>5 Learning Topics</small></span
+                >
+              </a>
+            </div>
+          </section>
+
+          <!-- STATISTICS -->
+          <section class="st-overview">
+            <div class="st-stat">
+              <div class="st-stat-icon"><i class="fa-solid fa-book"></i></div>
+              <div class="st-stat-info"><strong>25</strong><small>Available Topics</small></div>
+            </div>
+            <div class="st-stat">
+              <div class="st-stat-icon"><i class="fa-solid fa-circle-question"></i></div>
+              <div class="st-stat-info"><strong>750+</strong><small>Practice Questions</small></div>
+            </div>
+            <div class="st-stat">
+              <div class="st-stat-icon"><i class="fa-solid fa-signal"></i></div>
+              <div class="st-stat-info"><strong>03</strong><small>Difficulty Levels</small></div>
+            </div>
+            <div class="st-stat">
+              <div class="st-stat-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div class="st-stat-info"><strong>100%</strong><small>Growth Potential</small></div>
+            </div>
+          </section>
+
+          <!-- ================= MS OFFICE ================= -->
+          <section class="st-category-group" id="office">
+            <section class="st-category-banner">
+              <div>
+                <h2>Microsoft Office</h2>
+                <p>
+                  Master essential productivity tools. Create professional documents, organize
+                  information, build presentations, and work efficiently.
+                </p>
+              </div>
+              <span class="st-category-badge"
+                ><i class="fa-solid fa-folder-open"></i> MS OFFICE</span
+              >
+            </section>
+
+            <section class="st-topics-section">
+              <div class="st-topic-toolbar">
+                <div>
+                  <h2>MS Office Subtopics</h2>
+                  <p>Explore these five productivity tools.</p>
+                </div>
+                <span class="st-total-label">05 TOPICS</span>
+              </div>
+
+              <div class="st-topic-grid">
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-file-word"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>MS Word</h3>
+                  <p class="st-description">
+                    Create professional documents, format text, use layouts, tables, references, and
+                    advanced document tools.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 35 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=office&topic=MS%20Word"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-file-excel"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>MS Excel</h3>
+                  <p class="st-description">
+                    Work with spreadsheets, formulas, functions, charts, data analysis, and powerful
+                    Excel features.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 40 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=office&topic=MS%20Excel"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-file-powerpoint"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>MS PowerPoint</h3>
+                  <p class="st-description">
+                    Design attractive presentations using slides, animations, transitions, themes,
+                    and multimedia.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 30 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a
+                      class="st-start-btn"
+                      href="quiz-type.html?category=office&topic=MS%20PowerPoint"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-table"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>MS Access</h3>
+                  <p class="st-description">
+                    Understand databases, tables, relationships, queries, forms, and reports using
+                    Microsoft Access.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 25 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=office&topic=MS%20Access"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>MS Outlook</h3>
+                  <p class="st-description">
+                    Manage emails, calendars, contacts, meetings, tasks, and professional
+                    communication.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 20 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=office&topic=MS%20Outlook"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </section>
+
+          <!-- ================= FRONTEND ================= -->
+          <section class="st-category-group" id="frontend">
+            <section class="st-category-banner">
+              <div>
+                <h2>Frontend Development</h2>
+                <p>
+                  Build beautiful and responsive websites. Learn the core technologies behind modern
+                  web interfaces and interactive user experiences.
+                </p>
+              </div>
+              <span class="st-category-badge"><i class="fa-solid fa-code"></i> FRONTEND</span>
+            </section>
+
+            <section class="st-topics-section">
+              <div class="st-topic-toolbar">
+                <div>
+                  <h2>Frontend Subtopics</h2>
+                  <p>Explore the technologies used to build web interfaces.</p>
+                </div>
+                <span class="st-total-label">05 TOPICS</span>
+              </div>
+
+              <div class="st-topic-grid">
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-brands fa-html5"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>HTML</h3>
+                  <p class="st-description">
+                    Learn page structure, semantic elements, forms, tables, links, media, and
+                    accessible web content.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 35 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=frontend&topic=HTML"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>CSS</h3>
+                  <p class="st-description">
+                    Master selectors, colors, typography, box model, Flexbox, Grid, animations, and
+                    responsive design.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 40 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=frontend&topic=CSS"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-brands fa-js"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>JavaScript</h3>
+                  <p class="st-description">
+                    Understand variables, functions, arrays, objects, DOM manipulation, events, and
+                    modern JavaScript.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 40 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=frontend&topic=JavaScript"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-brands fa-bootstrap"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>Bootstrap</h3>
+                  <p class="st-description">
+                    Build responsive interfaces faster using Bootstrap's grid, components,
+                    utilities, and layouts.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 20 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=frontend&topic=Bootstrap"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-brands fa-react"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>React</h3>
+                  <p class="st-description">
+                    Explore components, JSX, props, state, hooks, events, and the fundamentals of
+                    React applications.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 25 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=frontend&topic=React"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </section>
+
+          <!-- ================= BACKEND ================= -->
+          <section class="st-category-group" id="backend">
+            <section class="st-category-banner">
+              <div>
+                <h2>Backend Development</h2>
+                <p>
+                  Understand how applications work behind the scenes. Explore servers, APIs,
+                  application logic, and backend technologies.
+                </p>
+              </div>
+              <span class="st-category-badge"><i class="fa-solid fa-server"></i> BACKEND</span>
+            </section>
+
+            <section class="st-topics-section">
+              <div class="st-topic-toolbar">
+                <div>
+                  <h2>Backend Subtopics</h2>
+                  <p>Learn the technologies that power applications.</p>
+                </div>
+                <span class="st-total-label">05 TOPICS</span>
+              </div>
+
+              <div class="st-topic-grid">
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-brands fa-node-js"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>Node.js</h3>
+                  <p class="st-description">
+                    Learn server-side JavaScript, modules, file systems, events, asynchronous
+                    programming, and runtime concepts.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 35 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=backend&topic=Node.js"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-server"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>Express.js</h3>
+                  <p class="st-description">
+                    Build web servers and APIs using routes, middleware, controllers, request
+                    handling, and responses.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 30 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=backend&topic=Express.js"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>REST APIs</h3>
+                  <p class="st-description">
+                    Understand HTTP methods, status codes, endpoints, JSON, API requests, and
+                    response structures.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 25 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=backend&topic=REST%20APIs"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>Authentication</h3>
+                  <p class="st-description">
+                    Explore signup, login, password security, sessions, tokens, and authorization
+                    fundamentals.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 25 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a
+                      class="st-start-btn"
+                      href="quiz-type.html?category=backend&topic=Authentication"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-fire"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>Firebase</h3>
+                  <p class="st-description">
+                    Learn Firebase Authentication, Firestore, database operations, hosting, and
+                    application integration.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 35 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=backend&topic=Firebase"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </section>
+
+          <!-- ================= DATABASE ================= -->
+          <section class="st-category-group" id="database">
+            <section class="st-category-banner">
+              <div>
+                <h2>Database Management</h2>
+                <p>
+                  Learn how information is stored, organized, retrieved, and managed. Develop a
+                  strong foundation in database technologies.
+                </p>
+              </div>
+              <span class="st-category-badge"><i class="fa-solid fa-database"></i> DATABASE</span>
+            </section>
+
+            <section class="st-topics-section">
+              <div class="st-topic-toolbar">
+                <div>
+                  <h2>Database Subtopics</h2>
+                  <p>Explore database concepts and popular database systems.</p>
+                </div>
+                <span class="st-total-label">05 TOPICS</span>
+              </div>
+
+              <div class="st-topic-grid">
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-database"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>SQL</h3>
+                  <p class="st-description">
+                    Learn queries, filtering, sorting, joins, aggregate functions, and database
+                    operations.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 35 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=database&topic=SQL"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-table"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>MySQL</h3>
+                  <p class="st-description">
+                    Explore relational databases, tables, keys, relationships, queries, and database
+                    management.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 30 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=database&topic=MySQL"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>MongoDB</h3>
+                  <p class="st-description">
+                    Understand NoSQL databases, collections, documents, CRUD operations, and data
+                    modeling.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 30 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a class="st-start-btn" href="quiz-type.html?category=database&topic=MongoDB"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>Database Design</h3>
+                  <p class="st-description">
+                    Learn entities, relationships, normalization, primary keys, foreign keys, and
+                    schema design.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 25 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a
+                      class="st-start-btn"
+                      href="quiz-type.html?category=database&topic=Database%20Design"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-fire"></i></div>
+                    <span class="st-level intermediate">Intermediate</span>
+                  </div>
+                  <h3>Firebase Firestore</h3>
+                  <p class="st-description">
+                    Work with collections, documents, queries, security rules, and cloud-hosted
+                    application data.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 30 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a
+                      class="st-start-btn"
+                      href="quiz-type.html?category=database&topic=Firebase%20Firestore"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </section>
+
+          <!-- ================= OTHERS ================= -->
+          <section class="st-category-group" id="others">
+            <section class="st-category-banner">
+              <div>
+                <h2>Other Useful Skills</h2>
+                <p>
+                  Expand your technical knowledge with essential tools and professional skills that
+                  support your development journey.
+                </p>
+              </div>
+              <span class="st-category-badge"><i class="fa-solid fa-toolbox"></i> OTHERS</span>
+            </section>
+
+            <section class="st-topics-section">
+              <div class="st-topic-toolbar">
+                <div>
+                  <h2>Other Learning Subtopics</h2>
+                  <p>Build useful skills beyond programming languages.</p>
+                </div>
+                <span class="st-total-label">05 TOPICS</span>
+              </div>
+
+              <div class="st-topic-grid">
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-brands fa-github"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>Git & GitHub</h3>
+                  <p class="st-description">
+                    Learn version control, repositories, commits, branches, merging, and
+                    collaborative workflows.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 35 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a
+                      class="st-start-btn"
+                      href="quiz-type.html?category=others&topic=Git%20%26%20GitHub"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-terminal"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>Command Line</h3>
+                  <p class="st-description">
+                    Explore terminal commands, directories, files, navigation, and everyday
+                    command-line operations.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 25 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a
+                      class="st-start-btn"
+                      href="quiz-type.html?category=others&topic=Command%20Line"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-computer"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>Computer Fundamentals</h3>
+                  <p class="st-description">
+                    Understand hardware, software, operating systems, memory, storage, and computer
+                    basics.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 30 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a
+                      class="st-start-btn"
+                      href="quiz-type.html?category=others&topic=Computer%20Fundamentals"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-globe"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>Internet & Networking</h3>
+                  <p class="st-description">
+                    Learn browsers, URLs, IP addresses, DNS, HTTP, HTTPS, and networking
+                    fundamentals.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 30 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a
+                      class="st-start-btn"
+                      href="quiz-type.html?category=others&topic=Internet%20%26%20Networking"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+
+                <article class="st-topic-card">
+                  <div class="st-card-top">
+                    <div class="st-topic-icon"><i class="fa-solid fa-brain"></i></div>
+                    <span class="st-level">Beginner</span>
+                  </div>
+                  <h3>Programming Logic</h3>
+                  <p class="st-description">
+                    Practice algorithms, conditions, loops, problem-solving, flowcharts, and logical
+                    thinking.
+                  </p>
+                  <div class="st-topic-meta">
+                    <span><i class="fa-solid fa-circle-question"></i> 30 Questions</span
+                    ><span><i class="fa-solid fa-layer-group"></i> 3 Levels</span>
+                  </div>
+                  <div class="st-card-actions">
+                    <a
+                      class="st-start-btn"
+                      href="quiz-type.html?category=others&topic=Programming%20Logic"
+                      >Explore Topic <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </section>
+
+          <!-- LEARNING GUIDE -->
+          <section class="st-learning-path">
+            <h2>Your Learning Roadmap</h2>
+            <p>Follow these three simple steps to get the most out of every topic.</p>
+
+            <div class="st-steps">
+              <div class="st-step">
+                <div class="st-step-number">01</div>
+                <div>
+                  <h3>Choose a Subtopic</h3>
+                  <p>Select the subject you want to learn and explore its fundamentals.</p>
+                </div>
+              </div>
+              <div class="st-step">
+                <div class="st-step-number">02</div>
+                <div>
+                  <h3>Select Your Level</h3>
+                  <p>
+                    Start with beginner questions, then move toward intermediate and advanced
+                    challenges.
+                  </p>
+                </div>
+              </div>
+              <div class="st-step">
+                <div class="st-step-number">03</div>
+                <div>
+                  <h3>Practice & Improve</h3>
+                  <p>Complete quizzes, review your results, and keep improving your knowledge.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="st-footer">
+          <span><strong>SkillQuest</strong> — Your journey to mastery starts here.</span>
+          <span>Learn • Practice • Improve &nbsp; © 2026 SkillQuest</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

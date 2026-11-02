@@ -400,7 +400,7 @@ img {
 .category-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 15px;
+  gap: 20px;
 }
 
 .category-card {
@@ -422,7 +422,7 @@ img {
   height: 105px;
   top: -50px;
   right: -40px;
-  background: var(--card-accent, #7164ff);
+  background: var(--card-accent);
   opacity: 0.1;
   filter: blur(4px);
   border-radius: 50%;
@@ -474,7 +474,7 @@ img {
 
 .office {
   --card-accent: #f18b4b;
-  --icon-bg: #f18b4b16;
+  --icon-bg: #f18b4b12;
 }
 
 .frontend {
@@ -495,6 +495,31 @@ img {
 .others {
   --card-accent: #ffce67;
   --icon-bg: #ffce6712;
+}
+
+.graphic-design {
+  --card-accent: #ec4899;
+  --icon-bg: #ec489912;
+}
+
+.ui-ux {
+  --card-accent: #8b5cf6;
+  --icon-bg: #8b5cf612;
+}
+
+.programming {
+  --card-accent: #3b82f6;
+  --icon-bg: #3b82f612;
+}
+
+.cybersecurity {
+  --card-accent: #10b981;
+  --icon-bg: #10b98112;
+}
+
+.digital-marketing {
+  --card-accent: #f59e0b;
+  --icon-bg: #f59e0b12;
 }
 
 .quick-actions {
@@ -2593,4 +2618,77 @@ img {
   color: white;
   background: #e64f6b;
   border-color: #e64f6b;
+}
+
+/* For Subtopics Page */
+
+.subtopics-page .topbar-left {
+  gap: 9px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.subtopics-page .topbar-left a {
+  transition: all 0.2s ease;
+}
+
+.subtopics-page .topbar-left a:hover {
+  color: var(--secondary);
+}
+
+.subtopics-page .topbar-left .fa-chevron-right {
+  font-size: 11px;
+  color: #64718c;
+}
+
+.subtopics-page .topbar-left span {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.subtopics-page .hero {
+  margin-bottom: 26px;
+  background:
+    radial-gradient(circle at 90% 15%, #7065ff25, transparent 32%),
+    linear-gradient(135deg, #121d36, #10182c);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.subtopics-page .hero::after {
+  display: none;
+}
+
+.subtopics-page .desc {
+  max-width: 650px;
+}
+
+.hero-action {
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px 30px;
+  background: #7065ff12;
+  border: 1px solid #7065ff45;
+  border-radius: 16px;
+}
+
+.hero-action .fa-book-open {
+  color: var(--secondary);
+  font-size: 20px;
+}
+
+.hero-action strong {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.hero-action small {
+  font-size: 12px;
+  color: var(--muted);
 }
