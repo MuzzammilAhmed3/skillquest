@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillQuest | Quiz Type</title>
+
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="https://kit.fontawesome.com/7c92364311.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <a href="../index.html" class="brand">
+          <i class="fa-solid fa-graduation-cap brand-icon"></i>
+
+          <div class="brand-info">
+            <h2>Skill<span class="highlight">Quest</span></h2>
+            <small>
+              Learn<i class="fa-solid fa-circle dot"></i> Practice<i
+                class="fa-solid fa-circle dot"
+              ></i
+              >Grow
+            </small>
+          </div>
+        </a>
+
+        <div class="nav-divider"></div>
+
+        <nav class="navigation">
+          <a href="../index.html" class="nav-link">
+            <i class="fa-regular fa-house nav-icon"></i>Home
+          </a>
+
+          <a href="./topics.html" class="nav-link active">
+            <i class="fa-solid fa-layer-group nav-icon"></i>Topics
+          </a>
+
+          <a href="./mix-quiz.html" class="nav-link">
+            <i class="fa-solid fa-shuffle nav-icon"></i>Mix Quiz
+          </a>
+
+          <a href="./results.html" class="nav-link">
+            <i class="fa-solid fa-chart-simple nav-icon"></i>My Results
+          </a>
+
+          <a href="./settings.html" class="nav-link">
+            <i class="fa-solid fa-gear nav-icon"></i>Settings
+          </a>
+        </nav>
+
+        <div class="profile">
+          <div class="avatar">M</div>
+
+          <div class="profile-info">
+            <strong>Muzzammil</strong>
+            <small>Beginner</small>
+          </div>
+
+          <i class="fa-solid fa-angle-down arrow-down"></i>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content quiz-type-page">
+        <!-- TOPBAR -->
+        <header class="topbar">
+          <div class="topbar-left">
+            <a href="./topics.html">Topics</a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <a id="subtopicsBreadcrumb" href="./subtopics.html">Subtopics</a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span>Quiz Type</span>
+          </div>
+
+          <div class="topbar-right">
+            <button aria-label="Search" type="button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button aria-label="Notifications" type="button">
+              <i class="fa-regular fa-bell"></i>
+            </button>
+
+            <div class="user-info">
+              <div class="user-avatar">M</div>
+              <span class="username">Muzzammil</span>
+              <i class="fa-solid fa-angle-down arrow-down"></i>
+            </div>
+          </div>
+        </header>
+
+        <div class="qt-container">
+          <!-- BACK LINK -->
+          <a href="./subtopics.html" id="backLink" class="qt-back-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Subtopics
+          </a>
+
+          <!-- HERO -->
+          <section class="qt-hero">
+            <div class="qt-hero-content">
+              <span class="qt-eyebrow">
+                <i class="fa-solid fa-graduation-cap"></i>
+                YOUR NEXT CHALLENGE
+              </span>
+
+              <h1>Choose Your <span>Quiz Type</span></h1>
+
+              <p>
+                Choose your preferred difficulty level, customize your quiz, and start improving
+                your knowledge one question at a time.
+              </p>
+
+              <div class="qt-selected-topic">
+                <div class="qt-selected-icon">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div>
+                  <small>YOUR SELECTED TOPIC</small>
+                  <h3 id="selectedTopic">Loading Topic...</h3>
+                  <span id="selectedCategory">Loading Category</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qt-hero-illustration">
+              <div class="qt-illustration-circle">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+
+              <div class="qt-floating-icon qt-float-one">
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="qt-floating-icon qt-float-two">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+
+              <div class="qt-floating-icon qt-float-three">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+            </div>
+          </section>
+
+          <!-- DIFFICULTY SECTION -->
+          <section class="qt-level-section">
+            <div class="qt-section-heading">
+              <div>
+                <span class="qt-section-label">STEP 01</span>
+                <h2>Select Difficulty Level</h2>
+                <p>Choose a level that matches your current knowledge.</p>
+              </div>
+
+              <span class="qt-level-count">
+                <i class="fa-solid fa-layer-group"></i>
+                03 Levels
+              </span>
+            </div>
+
+            <div class="qt-level-grid">
+              <!-- BEGINNER -->
+              <button class="qt-level-card" data-level="Beginner" type="button">
+                <div class="qt-level-top">
+                  <div class="qt-level-icon beginner">
+                    <i class="fa-solid fa-seedling"></i>
+                  </div>
+
+                  <span class="qt-level-number">01</span>
+                </div>
+
+                <div class="qt-level-content">
+                  <span class="qt-level-tag beginner-tag">EASY</span>
+                  <h3>Beginner</h3>
+
+                  <p>
+                    Start with fundamental concepts and build a strong understanding of the basics.
+                  </p>
+                </div>
+
+                <div class="qt-level-footer">
+                  <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Perfect for starters
+                  </span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </button>
+
+              <!-- INTERMEDIATE -->
+              <button class="qt-level-card" data-level="Intermediate" type="button">
+                <div class="qt-level-top">
+                  <div class="qt-level-icon intermediate">
+                    <i class="fa-solid fa-bolt"></i>
+                  </div>
+
+                  <span class="qt-level-number">02</span>
+                </div>
+
+                <div class="qt-level-content">
+                  <span class="qt-level-tag intermediate-tag">MEDIUM</span>
+                  <h3>Intermediate</h3>
+
+                  <p>
+                    Improve your understanding with practical questions and more challenging
+                    concepts.
+                  </p>
+                </div>
+
+                <div class="qt-level-footer">
+                  <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Build your confidence
+                  </span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </button>
+
+              <!-- ADVANCED -->
+              <button class="qt-level-card" data-level="Advanced" type="button">
+                <div class="qt-level-top">
+                  <div class="qt-level-icon advanced">
+                    <i class="fa-solid fa-crown"></i>
+                  </div>
+
+                  <span class="qt-level-number">03</span>
+                </div>
+
+                <div class="qt-level-content">
+                  <span class="qt-level-tag advanced-tag">HARD</span>
+                  <h3>Advanced</h3>
+
+                  <p>
+                    Challenge yourself with complex questions and test your complete understanding.
+                  </p>
+                </div>
+
+                <div class="qt-level-footer">
+                  <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Test your mastery
+                  </span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </button>
+            </div>
+          </section>
+
+          <!-- QUIZ CONFIGURATION -->
+          <section class="qt-config-section">
+            <div class="qt-section-heading">
+              <div>
+                <span class="qt-section-label">STEP 02</span>
+                <h2>Customize Your Quiz</h2>
+                <p>Set up your quiz according to your preference.</p>
+              </div>
+            </div>
+
+            <div class="qt-config-grid">
+              <div class="qt-config-card">
+                <div class="qt-config-icon">
+                  <i class="fa-solid fa-list-ol"></i>
+                </div>
+
+                <div class="qt-config-info">
+                  <label for="questionCount">Number of Questions</label>
+                  <p>Choose how many questions you want to answer.</p>
+
+                  <select id="questionCount">
+                    <option value="5">5 Questions</option>
+                    <option value="10" selected>10 Questions</option>
+                    <option value="15">15 Questions</option>
+                    <option value="20">20 Questions</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="qt-config-card">
+                <div class="qt-config-icon">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <div class="qt-config-info">
+                  <label for="questionTime">Time Per Question</label>
+                  <p>Decide how much time you get for each question.</p>
+
+                  <select id="questionTime">
+                    <option value="15">15 Seconds</option>
+                    <option value="30" selected>30 Seconds</option>
+                    <option value="45">45 Seconds</option>
+                    <option value="60">60 Seconds</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- QUIZ SUMMARY -->
+          <section class="qt-summary">
+            <div class="qt-summary-info">
+              <span class="qt-section-label">STEP 03</span>
+              <h3>Ready to Begin?</h3>
+
+              <p id="quizSummary">Select a difficulty level to prepare your quiz.</p>
+            </div>
+
+            <button id="startQuizBtn" class="qt-start-btn" type="button">
+              Start Quiz
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </section>
+
+          <p class="qt-error" id="quizError" role="alert"></p>
+
+          <!-- TIP -->
+          <div class="qt-tip">
+            <div class="qt-tip-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <div>
+              <strong>SkillQuest Tip</strong>
+              <p>
+                Start with Beginner if you are new to a topic. Practice regularly and gradually
+                challenge yourself with higher levels.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="qt-footer">
+          <span> <strong>SkillQuest</strong> — Your journey to mastery starts here. </span>
+
+          <span> Learn • Practice • Improve &nbsp; © 2026 SkillQuest </span>
+        </footer>
+      </main>
+    </div>
+
+    <script>
+      /* =================================
+       GET SELECTED TOPIC FROM URL
+    ================================= */
+
+      const params = new URLSearchParams(window.location.search);
+
+      const category = params.get("category") || "";
+      const topic = params.get("topic") || "";
+
+      const selectedTopic = document.getElementById("selectedTopic");
+      const selectedCategory = document.getElementById("selectedCategory");
+
+      const backLink = document.getElementById("backLink");
+      const breadcrumb = document.getElementById("subtopicsBreadcrumb");
+
+      const levelCards = document.querySelectorAll(".qt-level-card");
+
+      const questionCount = document.getElementById("questionCount");
+      const questionTime = document.getElementById("questionTime");
+
+      const quizSummary = document.getElementById("quizSummary");
+      const quizError = document.getElementById("quizError");
+
+      const startQuizBtn = document.getElementById("startQuizBtn");
+
+      let selectedLevel = "";
+
+      /* =================================
+       CATEGORY NAMES
+    ================================= */
+
+      const categoryNames = {
+        office: "MS Office",
+        frontend: "Frontend Development",
+        backend: "Backend Development",
+        database: "Database Management",
+        others: "Other Useful Skills",
+        "graphic-design": "Graphic Design",
+        "ui-ux": "UI/UX Design",
+        programming: "Programming",
+        cybersecurity: "Cyber Security",
+        "digital-marketing": "Digital Marketing",
+      };
+
+      /* =================================
+       DISPLAY TOPIC INFORMATION
+    ================================= */
+
+      selectedTopic.textContent = topic || "No Topic Selected";
+
+      selectedCategory.textContent = categoryNames[category] || category || "Unknown Category";
+
+      const subtopicsUrl = `./subtopics.html?category=${encodeURIComponent(category)}`;
+
+      backLink.href = subtopicsUrl;
+      breadcrumb.href = subtopicsUrl;
+
+      if (!category || !topic) {
+        quizError.textContent =
+          "Your topic information is missing. Please return to Subtopics and select a topic.";
+        startQuizBtn.disabled = true;
+      }
+
+      /* =================================
+       LEVEL SELECTION
+    ================================= */
+
+      levelCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          if (!category || !topic) return;
+
+          selectedLevel = card.dataset.level;
+
+          levelCards.forEach((item) => {
+            item.classList.remove("selected");
+          });
+
+          card.classList.add("selected");
+
+          updateSummary();
+
+          quizError.textContent = "";
+        });
+      });
+
+      /* =================================
+       UPDATE QUIZ SUMMARY
+    ================================= */
+
+      function updateSummary() {
+        if (!selectedLevel) {
+          quizSummary.textContent = "Select a difficulty level to prepare your quiz.";
+          return;
+        }
+
+        quizSummary.textContent =
+          `${topic} · ${selectedLevel} Level · ` +
+          `${questionCount.value} Questions · ` +
+          `${questionTime.value} Seconds Per Question`;
+      }
+
+      questionCount.addEventListener("change", updateSummary);
+      questionTime.addEventListener("change", updateSummary);
+
+      /* =================================
+       START QUIZ
+    ================================= */
+
+      startQuizBtn.addEventListener("click", () => {
+        if (!category || !topic) {
+          quizError.textContent = "Please select a valid topic before starting.";
+          return;
+        }
+
+        if (!selectedLevel) {
+          quizError.textContent = "Please select a difficulty level first.";
+          return;
+        }
+
+        const quizUrl = new URL("./quiz.html", window.location.href);
+
+        quizUrl.searchParams.set("category", category);
+        quizUrl.searchParams.set("topic", topic);
+        quizUrl.searchParams.set("level", selectedLevel);
+        quizUrl.searchParams.set("count", questionCount.value);
+        quizUrl.searchParams.set("time", questionTime.value);
+
+        window.location.href = quizUrl.toString();
+      });
+    </script>
+  </body>
+</html>
