@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SkillQuest | Quiz</title>
+
+  <link rel="stylesheet" href="./Css/style.css">
+  <link rel="stylesheet" href="./index.css">
+
+  <script
+    src="https://kit.fontawesome.com/7c92364311.js"
+    crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+
+<div class="app-layout quiz-page">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="brand">
+      <i class="fa-solid fa-graduation-cap brand-icon"></i>
+
+      <div class="brand-info">
+        <h2>Skill<span class="highlight">Quest</span></h2>
+        <small>
+          Learn
+          <i class="fa-solid fa-circle dot footer-dot"></i>
+          Practice
+          <i class="fa-solid fa-circle dot footer-dot"></i>
+          Grow
+        </small>
+      </div>
+    </div>
+
+    <div class="nav-divider"></div>
+
+    <nav class="navigation">
+
+      <a href="../index.html" class="nav-link">
+        <i class="fa-solid fa-house nav-icon"></i>
+        <span>Home</span>
+      </a>
+
+      <a href="./topics.html" class="nav-link">
+        <i class="fa-solid fa-layer-group nav-icon"></i>
+        <span>Topics</span>
+      </a>
+
+      <a href="./mix-quiz.html" class="nav-link">
+        <i class="fa-solid fa-shuffle nav-icon"></i>
+        <span>Mix Quiz</span>
+      </a>
+
+      <a href="./results.html" class="nav-link">
+        <i class="fa-solid fa-chart-column nav-icon"></i>
+        <span>My Results</span>
+      </a>
+
+      <a href="./settings.html" class="nav-link">
+        <i class="fa-solid fa-gear nav-icon"></i>
+        <span>Settings</span>
+      </a>
+
+    </nav>
+
+    <!-- PROFILE -->
+    <div class="profile">
+
+      <div class="avatar">M</div>
+
+      <div class="profile-info">
+        <strong>Muzzammil</strong>
+        <small>Beginner</small>
+      </div>
+
+      <i class="fa-solid fa-chevron-down arrow-down"></i>
+
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+
+      <div class="topbar-left">
+        <span>/</span>
+        <div>
+          <small class="quiz-topbar-label">YOUR LEARNING SPACE</small>
+          <h2>Quiz</h2>
+        </div>
+      </div>
+
+      <div class="topbar-right">
+
+        <button type="button" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button type="button" aria-label="Notifications">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+
+        <div class="user-info">
+          <div class="user-avatar">M</div>
+          <span class="username">Muzzammil</span>
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- QUIZ CONTENT -->
+    <div class="quiz-content">
+
+      <!-- QUIZ INTRO -->
+      <section class="quiz-intro">
+
+        <div class="quiz-breadcrumb">
+          <a href="../index.html">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="./topics.html">Topics</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="./subtopics.html">MS Office</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <strong>MS Word</strong>
+        </div>
+
+        <div class="quiz-heading-row">
+
+          <div class="quiz-heading">
+
+            <div class="quiz-category">
+              <span class="quiz-category-icon">
+                <i class="fa-solid fa-file-word"></i>
+              </span>
+              <span>MICROSOFT WORD</span>
+            </div>
+
+            <h1>Test Your <span>Knowledge.</span></h1>
+
+            <p>
+              Challenge yourself and see how much you've learned.
+              Every question brings you one step closer to mastery.
+            </p>
+
+          </div>
+
+          <div class="quiz-level">
+
+            <span class="level-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </span>
+
+            <div>
+              <small>DIFFICULTY</small>
+              <strong>Beginner</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- PROGRESS -->
+      <section class="quiz-progress-section">
+
+        <div class="progress-info">
+
+          <div>
+            <span class="progress-label">YOUR PROGRESS</span>
+            <strong>Question <span>04</span> of 20</strong>
+          </div>
+
+          <span class="progress-percentage">20%</span>
+
+        </div>
+
+        <div class="progress-track">
+          <div class="progress-fill"></div>
+        </div>
+
+        <div class="progress-details">
+
+          <span>
+            <i class="fa-regular fa-circle-check"></i>
+            3 Answered
+          </span>
+
+          <span>
+            <i class="fa-regular fa-circle"></i>
+            17 Remaining
+          </span>
+
+        </div>
+
+      </section>
+
+
+      <!-- QUESTION CARD -->
+      <section class="question-workspace">
+
+        <div class="question-top">
+
+          <div class="question-number">
+            <span>QUESTION</span>
+            <strong>04</strong>
+          </div>
+
+          <div class="question-meta">
+
+            <span class="question-type">
+              <i class="fa-solid fa-list-check"></i>
+              Multiple Choice
+            </span>
+
+            <span class="question-points">
+              <i class="fa-solid fa-star"></i>
+              5 Points
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- QUESTION -->
+        <div class="question-content">
+
+          <span class="question-tag">MICROSOFT WORD BASICS</span>
+
+          <h2>
+            Which keyboard shortcut is used to
+            <span>save a document</span> in MS Word?
+          </h2>
+
+          <p>Select the correct answer from the options below.</p>
+
+        </div>
+
+
+        <!-- ANSWERS -->
+        <form class="answer-form">
+
+          <div class="answer-grid">
+
+            <label class="answer-option">
+              <input type="radio" name="answer" value="A">
+
+              <span class="answer-content">
+                <span class="answer-letter">A</span>
+                <span class="answer-text">Ctrl + P</span>
+                <span class="answer-check">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </span>
+            </label>
+
+
+            <label class="answer-option">
+              <input type="radio" name="answer" value="B">
+
+              <span class="answer-content">
+                <span class="answer-letter">B</span>
+                <span class="answer-text">Ctrl + S</span>
+                <span class="answer-check">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </span>
+            </label>
+
+
+            <label class="answer-option">
+              <input type="radio" name="answer" value="C">
+
+              <span class="answer-content">
+                <span class="answer-letter">C</span>
+                <span class="answer-text">Ctrl + C</span>
+                <span class="answer-check">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </span>
+            </label>
+
+
+            <label class="answer-option">
+              <input type="radio" name="answer" value="D">
+
+              <span class="answer-content">
+                <span class="answer-letter">D</span>
+                <span class="answer-text">Ctrl + X</span>
+                <span class="answer-check">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </span>
+            </label>
+
+          </div>
+
+        </form>
+
+
+        <!-- QUESTION FOOTER -->
+        <div class="question-footer">
+
+          <div class="question-hint">
+            <span class="hint-icon">
+              <i class="fa-regular fa-lightbulb"></i>
+            </span>
+
+            <span>Take your time. Choose carefully!</span>
+          </div>
+
+          <div class="question-actions">
+
+            <button class="previous-btn" type="button">
+              <i class="fa-solid fa-arrow-left"></i>
+              Previous
+            </button>
+
+            <button class="next-btn" type="button">
+              Next Question
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer class="footer">
+
+        <div class="footer-brand">
+
+          <div class="footer-logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <div class="footer-text">
+            <strong>Skill<span>Quest</span></strong>
+            <small>Your journey to mastery starts here.</small>
+          </div>
+
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-motto">
+          <span><i class="fa-solid fa-book-open"></i> Learn</span>
+          <i class="fa-solid fa-circle footer-dot"></i>
+          <span><i class="fa-solid fa-bolt"></i> Practice</span>
+          <i class="fa-solid fa-circle footer-dot"></i>
+          <span><i class="fa-solid fa-trophy"></i> Grow</span>
+        </div>
+
+        <div class="footer-copyright">
+          <span>Made with <i class="fa-solid fa-heart"></i> for curious minds</span>
+          <span class="copyright">© 2026 SkillQuest</span>
+        </div>
+
+      </footer>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
