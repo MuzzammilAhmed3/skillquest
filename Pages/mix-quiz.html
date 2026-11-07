@@ -6,6 +6,7 @@
     <title>SkillQuest | Mix Quiz</title>
     <link rel="stylesheet" href="../Css/style.css" />
     <script src="https://kit.fontawesome.com/7c92364311.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Css/responsive.css" />
   </head>
   <body>
     <div class="app-layout">
@@ -59,7 +60,7 @@
             <small>Beginner</small>
           </div>
 
-          <i class="fa-solid fa-angle-down arrow-down"></i>
+          <i class="fa-solid fa-angle-down profile-dropdown-icon"></i>
         </div>
       </aside>
 
@@ -80,24 +81,28 @@
             <div class="user-info">
               <div class="user-avatar">M</div>
               <span class="username">Muzzammil</span>
-              <i class="fa-solid fa-angle-down arrow-down"></i>
+              <i class="fa-solid fa-angle-down profile-dropdown-icon"></i>
             </div>
           </div>
         </header>
 
         <!-- Hero Section -->
         <section class="hero">
-          <p class="eyebrow">YOUR KNOWLEDGE CHALLENGE</p>
-          <h1 class="title">Mix It Up. <span>Level Up.</span></h1>
-          <p class="desc">
+          <p class="hero-eyebrow">YOUR KNOWLEDGE CHALLENGE</p>
+          <h1 class="hero-title">Mix It Up. <span>Level Up.</span></h1>
+          <p class="hero-description">
             Challenge yourself with questions from different subjects. Choose your categories, set
             your difficulty, and test what you know.
           </p>
 
           <div class="mix-quiz-tags">
-            <span class="tag"><i class="fa-solid fa-shuffle tag-icon"></i>Mixed Topics</span
-            ><span class="tag"><i class="fa-solid fa-bullseye tag-icon"></i>Your Difficulty</span
-            ><span class="tag"><i class="fa-solid fa-chart-line tag-icon"></i>Track Progress</span>
+            <span class="mix-feature-tag"
+              ><i class="fa-solid fa-shuffle tag-icon"></i>Mixed Topics</span
+            ><span class="mix-feature-tag"
+              ><i class="fa-solid fa-bullseye tag-icon"></i>Your Difficulty</span
+            ><span class="mix-feature-tag"
+              ><i class="fa-solid fa-chart-line tag-icon"></i>Track Progress</span
+            >
           </div>
         </section>
 
@@ -176,6 +181,66 @@
                   </span>
 
                   <strong>Others</strong>
+                  <small>Word, Excel, PowerPoint</small>
+                </label>
+
+                <label class="mix-category graphic-design">
+                  <input type="checkbox" name="category" value="graphic-design" checked />
+                  <span class="mix-check"><i class="fa-solid fa-check"></i></span>
+
+                  <span class="mix-category-icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                  </span>
+
+                  <strong>Graphic Design</strong>
+                  <small>Word, Excel, PowerPoint</small>
+                </label>
+
+                <label class="mix-category ui-ux">
+                  <input type="checkbox" name="category" value="ui-ux" checked />
+                  <span class="mix-check"><i class="fa-solid fa-check"></i></span>
+
+                  <span class="mix-category-icon">
+                    <i class="fa-solid fa-object-group"></i>
+                  </span>
+
+                  <strong>UI/UX Design</strong>
+                  <small>Word, Excel, PowerPoint</small>
+                </label>
+
+                <label class="mix-category programming">
+                  <input type="checkbox" name="category" value="programming" checked />
+                  <span class="mix-check"><i class="fa-solid fa-check"></i></span>
+
+                  <span class="mix-category-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                  </span>
+
+                  <strong>Programming</strong>
+                  <small>Word, Excel, PowerPoint</small>
+                </label>
+
+                <label class="mix-category cybersecurity">
+                  <input type="checkbox" name="category" value="cybersecurity" checked />
+                  <span class="mix-check"><i class="fa-solid fa-check"></i></span>
+
+                  <span class="mix-category-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                  </span>
+
+                  <strong>Cyber Security</strong>
+                  <small>Word, Excel, PowerPoint</small>
+                </label>
+
+                <label class="mix-category digital-marketing">
+                  <input type="checkbox" name="category" value="digital-marketing" checked />
+                  <span class="mix-check"><i class="fa-solid fa-check"></i></span>
+
+                  <span class="mix-category-icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                  </span>
+
+                  <strong>Digital Marketing</strong>
                   <small>Word, Excel, PowerPoint</small>
                 </label>
               </div>
