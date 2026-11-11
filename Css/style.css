@@ -1518,7 +1518,7 @@ img {
 
 .chart-period {
   max-width: 145px;
-  padding: 10px;
+  padding: var(--space-sm);
   color: var(--color-text-primary);
   background-color: var(--color-surface-main);
   border: 1px solid var(--color-border);
