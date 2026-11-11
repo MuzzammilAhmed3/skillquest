@@ -2236,7 +2236,7 @@ img {
   padding: 23px;
   background: var(--color-card);
   border: 1px solid var(--color-border);
-  border-radius: 16px;
+  border-radius: var(--space-md);
   scroll-margin-top: 20px;
 }
 
@@ -2298,7 +2298,7 @@ img {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 16px;
+  padding: var(--space-md);
   background: var(--color-surface-main);
   border: 1px solid var(--color-border);
   border-radius: 12px;
@@ -2312,7 +2312,7 @@ img {
   flex-shrink: 0;
   color: white;
   background: linear-gradient(135deg, var(--palette-blue-718), var(--palette-blue-536));
-  border-radius: 16px;
+  border-radius: var(--space-md);
   font-size: 30px;
   font-weight: 800;
 }
@@ -2347,7 +2347,7 @@ img {
   border-radius: 8px;
   font-size: 12px;
   font-weight: 600;
-  transition: all 0.2s;
+  transition: var(--motion-fast);
 }
 
 .change-photo-btn:hover {
@@ -2392,7 +2392,7 @@ img {
   border: 1px solid var(--color-border);
   border-radius: 9px;
   font-size: 14px;
-  transition: all 0.2s;
+  transition: var(--motion-fast);
 }
 
 .settings-field input::placeholder {
@@ -2415,7 +2415,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 10px;
+  gap: var(--space-sm);
   margin-top: 20px;
 }
 
@@ -2431,7 +2431,7 @@ img {
   border-radius: 9px;
   font-size: 13px;
   font-weight: 700;
-  transition: all 0.25s;
+  transition: var(--motion-standard);
 }
 
 .settings-cancel-btn {
@@ -2513,7 +2513,7 @@ img {
   border: 1px solid #3a4861;
   border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: var(--motion-slow);
 }
 
 .toggle-slider::before {
@@ -2524,7 +2524,7 @@ img {
   height: 17px;
   background: var(--palette-blue-245);
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition: var(--motion-slow);
 }
 
 .settings-toggle input:checked + .toggle-slider {
@@ -2553,7 +2553,7 @@ img {
   border: 1px solid var(--color-border);
   border-radius: 12px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: var(--motion-fast);
 }
 
 .appearance-choice:hover {
@@ -2588,7 +2588,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 7px;
-  padding: 10px;
+  padding: var(--space-sm);
   border: 1px solid var(--color-border);
   border-radius: 8px;
 }
@@ -2651,8 +2651,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
-  padding: 16px;
+  gap: var(--space-md);
+  padding: var(--space-md);
   background: #ff7d9208;
   border: 1px solid #ff7d922b;
   border-radius: 11px;
@@ -2664,7 +2664,7 @@ img {
 }
 
 .danger-zone p {
-  margin-top: 6px;
+  margin-top: var(--space-xs);
   color: var(--color-text-muted);
   font-size: 11px;
   line-height: 1.5;
@@ -2684,7 +2684,7 @@ img {
   border-radius: 8px;
   font-size: 12px;
   font-weight: 700;
-  transition: all 0.2s ease;
+  transition: var(--motion-fast);
 }
 
 .delete-account-btn:hover {
