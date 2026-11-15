@@ -335,7 +335,7 @@
   font-weight: 700;
 }
 
-.side-card-heading > i {
+.side-card-heading > .fa-clock {
   color: var(--secondary, #38d9ff);
 }
 
