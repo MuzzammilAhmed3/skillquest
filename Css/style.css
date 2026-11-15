@@ -3840,6 +3840,12 @@ img {
   transition: var(--motion-fast);
 }
 
+.answer-option:hover {
+  border-color: var(--color-primary);
+  background: #7065ff0f;
+  transform: translateX(3px);
+}
+
 .answer-option input {
   position: absolute;
   opacity: 0;
@@ -3849,4 +3855,29 @@ img {
 .anwer-letter {
   width: 35px;
   height: 35px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-sm);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 700;
+  transition: var(--motion-fast);
+}
+
+.answer-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.answer-check {
+  margin-left: auto;
+  color: var(--color-text-muted);
+}
+
+.answer-option:has(input:checked) {
+  border-color: var(--color-primary);
+  background: #7065ff1f;
 }
