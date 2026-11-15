@@ -4027,3 +4027,73 @@ img {
   border-color: var(--color-primary);
   color: #fff;
 }
+
+.question-number.answered {
+  border-color: rgba(57, 220, 164, 0.4);
+  background: rgba(57, 220, 164, 0.1);
+  color: #39dca4;
+}
+
+.question-legend {
+  display: grid;
+  gap: var(--space-sm);
+  margin-top: 18px;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.question-legend span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-text-muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.legend-dot.answered {
+  background: #39dca4;
+}
+
+.legend-dot.current {
+  background: #7065ff;
+}
+
+.legend-dot.unanswered {
+  border: 1px solid #8997b1;
+  background: transparent;
+}
+
+.quiz-tip-card {
+  background: linear-gradient(135deg, #7065ff24, var(--card, #111b30));
+}
+
+.tip-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  margin-bottom: var(--space-sm);
+  border-radius: var(--space-sm);
+  background: #ffce671f;
+  color: #ffce67;
+  font-size: 20px;
+}
+
+.quiz-tip-card h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.quiz-tip-card p {
+  color: var(--muted, #8997b1);
+  font-size: 12px;
+  line-height: 1.5;
+}
