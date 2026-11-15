@@ -3806,7 +3806,7 @@ img {
   font-size: 11px;
   font-weight: 600;
 }
- 
+
 .question-content h2 {
   max-width: 700px;
   font-size: 26px;
@@ -3820,4 +3820,33 @@ img {
   font-size: 13px;
 }
 
+.answer-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
 
+.answer-option {
+  position: relative;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 12px var(--space-md);
+  background: var(--color-surface-main);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--motion-fast);
+}
+
+.answer-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.anwer-letter {
+  width: 35px;
+  height: 35px;
+}
