@@ -4097,3 +4097,21 @@ img {
   font-size: 12px;
   line-height: 1.5;
 }
+
+.quiz-bottom-note {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: 20px;
+  padding: 13px var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-sm);
+  background: var(--color-surface-main);
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.quiz-bottom-note .fa-shield-halved {
+  color: var(--color-success);
+  font-size: 15px;
+}
