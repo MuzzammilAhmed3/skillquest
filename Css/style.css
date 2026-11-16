@@ -4074,7 +4074,7 @@ img {
   background: linear-gradient(135deg, #7065ff24, var(--card, #111b30));
 }
 
-.tip-icon {
+.quiz-page .tip-icon {
   width: 40px;
   height: 40px;
   display: grid;
@@ -4115,3 +4115,5 @@ img {
   color: var(--color-success);
   font-size: 15px;
 }
+
+
